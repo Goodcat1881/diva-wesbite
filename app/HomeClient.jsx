@@ -31,9 +31,9 @@ const galleryItems = [
 ]
 
 const salons = [
-  { bg: 'var(--blush)',      photo: '/images/damas-1.avif',       name: 'Plaza Damas',  area: 'Sri Hartamas, KL',      hours: 'Mon – Sat: 10am – 7pm', address: 'M-0-13, Block M, Plaza Damas, Jalan Sri Hartamas 1, Taman Sri Hartamas, 50480 Kuala Lumpur',   maps: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur' },
-  { bg: 'var(--pink)',       photo: '/images/shahalam-1.avif',    name: 'Shah Alam',    area: 'Shah Alam, Selangor',   hours: 'Mon – Sat: 10am – 7pm', address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',                  maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor' },
-  { bg: 'var(--cream-warm)', photo: '/images/hairlibrary-1.avif', name: 'Damansara',    area: 'Mutiara Damansara, PJ', hours: 'Mon – Sat: 11am – 8pm', address: 'Hair Library, 21, Jalan PJU 7/7a, Mutiara Damansara, 47800 Petaling Jaya, Selangor',              maps: 'https://www.google.com/maps/search/?api=1&query=Hair+Library+21+Jalan+PJU+7+7a+Mutiara+Damansara+47800+Petaling+Jaya+Selangor' },
+  { bg: 'var(--blush)',      photo: '/images/damas-1.avif',       name: 'Plaza Damas',  area: 'Sri Hartamas, KL',      hours: 'Mon – Sat: 10am – 7pm', address: 'M-0-13, Block M, Plaza Damas, Jalan Sri Hartamas 1, Taman Sri Hartamas, 50480 Kuala Lumpur',   maps: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur',   fresha: 'https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true' },
+  { bg: 'var(--pink)',       photo: '/images/shahalam-1.avif',    name: 'Shah Alam',    area: 'Shah Alam, Selangor',   hours: 'Mon – Sat: 10am – 7pm', address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',                  maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor',            fresha: 'https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true' },
+  { bg: 'var(--cream-warm)', photo: '/images/hairlibrary-1.avif', name: 'Damansara',    area: 'Mutiara Damansara, PJ', hours: 'Mon – Sat: 11am – 8pm', address: 'Hair Library, 21, Jalan PJU 7/7a, Mutiara Damansara, 47800 Petaling Jaya, Selangor',              maps: 'https://www.google.com/maps/search/?api=1&query=Hair+Library+21+Jalan+PJU+7+7a+Mutiara+Damansara+47800+Petaling+Jaya+Selangor',          fresha: 'https://www.fresha.com/a/dashing-diva-damansara-petaling-jaya-hair-library-bangunan-sterling-group-21-jalan-pju-7-7a-o9dwyt9p/all-offer?venue=true' },
 ]
 
 export default function HomePage() {
@@ -491,7 +491,7 @@ function SalonCard({ salon: s }) {
         </div>
         <div style={{ fontSize: '12px', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '2px' }}>{s.hours}</div>
         <div style={{ fontSize: '12px', color: 'var(--muted)', lineHeight: 1.65 }}>{s.address}</div>
-        <a href="https://www.fresha.com" target="_blank" rel="noopener noreferrer" className="salon-book-btn">
+        <a href={s.fresha} target="_blank" rel="noopener noreferrer" className="salon-book-btn">
           Book at This Salon
         </a>
         <a href={s.maps} target="_blank" rel="noopener noreferrer" className="salon-book-btn" style={{ marginTop: '6px', color: 'var(--muted)', borderColor: 'rgba(42,21,32,0.18)' }}>
