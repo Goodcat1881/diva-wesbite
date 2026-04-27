@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }) {
             <p style={{ fontSize: '13px', color: 'var(--muted)', marginBottom: '20px' }}>
               All three Dashing Diva branches are open for bookings — Plaza Damas, Shah Alam, and Damansara.
             </p>
-            <a href="/salons" className="btn btn-primary btn-sm">Find your nearest branch →</a>
+            <a href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true" className="btn btn-primary btn-sm">Find your nearest branch →</a>
           </div>
         </div>
       </section>

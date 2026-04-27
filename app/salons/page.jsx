@@ -8,6 +8,10 @@ export const metadata = {
     description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Open Mon–Sat, 10am–8pm.',
     url: 'https://www.dashingdiva.my/salons',
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 const salons = [
