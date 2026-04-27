@@ -26,6 +26,7 @@ const timeline = [
   { year: '2018', event: 'Dashing Diva Shah Alam opens its doors as the first branch.', last: false },
   { year: '2019', event: 'Dashing Diva Damansara follows, expanding the network to PJ.', last: false },
   { year: '2021', event: 'Dashing Diva Plaza Damas opens in Sri Hartamas, KL.', last: false },
+  { year: '2025', event: 'Hairkunst Hijabis Luxe is ready to serve in Bangi.', last: false },
   { year: 'Today', event: 'Multiple outlets across the Klang Valley — with more to come.', last: true },
 ]
 
