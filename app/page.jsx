@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 /* ── Data ── */
 const services = [
-  { num: '01', icon: '✂️', name: 'HAIRCUT &\nSTYLING',   price: 'From RM 35',   desc: 'Precision cuts and finish styling tailored to your face shape and hijab lifestyle.',  bg: 'var(--blush)',      accent: 'var(--pink-deep)' },
-  { num: '02', icon: '🎨', name: 'HAIR\nCOLOURING',      price: 'From RM 130',  desc: 'Subtle highlights to full transformations — halal-friendly Gumash colour available.',  bg: 'var(--pink)',       accent: 'var(--warm-dark)' },
-  { num: '03', icon: '💆', name: 'HAIR\nTREATMENTS',     price: 'From RM 89',   desc: 'Repair, hydrate and strengthen — customised to your hair type and condition.',         bg: 'var(--cream-warm)', accent: 'var(--pink-deep)' },
-  { num: '04', icon: '🧪', name: 'REBONDING\n& PERMING', price: 'From RM 250',  desc: "Long-lasting texture services — rebonding, keratin, and perms done with care.",       bg: 'var(--pink-light)', accent: 'var(--warm-dark)' },
+  { num: '01', icon: '✂️', name: 'HAIRCUT &\nSTYLING',   price: 'From RM 15',   desc: 'Precision cuts and finish styling tailored to your face shape and hijab lifestyle.',  bg: 'var(--blush)',      accent: 'var(--pink-deep)' },
+  { num: '02', icon: '🌈', name: 'HAIR\nCOLOURING',      price: 'From RM 120',  desc: 'Subtle highlights to full transformations — halal-friendly Gumash colour available.',  bg: 'var(--pink)',       accent: 'var(--warm-dark)' },
+  { num: '03', icon: '🍎', name: 'HAIR\nTREATMENTS',     price: 'From RM 140',  desc: 'Repair, hydrate and strengthen — customised to your hair type and condition.',         bg: 'var(--cream-warm)', accent: 'var(--pink-deep)' },
+  { num: '04', icon: '👩🏽‍🦱', name: 'REBONDING\n& PERMING', price: 'From RM 170',  desc: "Long-lasting texture services — rebonding, keratin, and perms done with care.",       bg: 'var(--pink-light)', accent: 'var(--warm-dark)' },
 ]
 
 const reviews = [

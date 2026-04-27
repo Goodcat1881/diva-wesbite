@@ -4,26 +4,29 @@ import Link from 'next/link'
 const pillars = [
   {
     number: '01',
-    title: 'Women-Only Space',
-    body: 'Every corner of Dashing Diva is designed for Muslimah comfort. No men on the floor — ever. You can let your hair down, literally.',
+    title: 'Purpose Built, Not Adapted',
+    body: 'Most salons that offer a "Muslimah option" retrofit it. A curtain here, a private room if you book ahead. Dashing Diva was designed from day one with Muslimah women as the only brief. Nothing was added on later.',
   },
   {
     number: '02',
-    title: 'Rooted in Craft',
-    body: "Our techniques come directly from Bambang Soteto's decades of professional training. Every stylist in our network is trained to his standard.",
+    title: 'The Same Standard Every Visit',
+    body: "Every stylist trains to Bambang's curriculum before she works on a client. You don't get a great experience one visit and an inconsistent one the next depending on who's rostered.",
   },
   {
     number: '03',
-    title: 'Quality Without the Wait',
-    body: "Premium results shouldn't mean waiting weeks for an appointment. We built Dashing Diva so great hair is always within reach.",
+    title: 'Close to Where You Already Are',
+    body: "Quality hair shouldn't mean driving across the city or waiting three weeks for a slot. We're building a network so that the standard you'd expect from a flagship is available near you.",
   },
 ]
 
 const timeline = [
-  { year: '[YEAR]', event: "Bambang Soteto establishes his reputation as one of Malaysia's leading hair professionals.", last: false },
-  { year: '[YEAR]', event: 'The idea for a Muslimah-first, women-only salon concept takes shape.', last: false },
-  { year: '[YEAR]', event: 'Dashing Diva opens its first branch under the Bambang Soteto license.', last: false },
-  { year: 'Today',  event: 'Multiple branches serving thousands of clients across Malaysia.', last: true },
+  { year: '2005', event: 'Bambang Soteto establishes himself as one of Malaysia\'s leading hair professionals.', last: false },
+  { year: '2007', event: 'Flagship Hairkunst Curve salon is built — the foundation of Bambang\'s legacy brand.', last: false },
+  { year: '2017', event: 'The ladies-only concept takes shape — a Muslimah-first salon built from the ground up.', last: false },
+  { year: '2018', event: 'Dashing Diva Shah Alam opens its doors as the first branch.', last: false },
+  { year: '2019', event: 'Dashing Diva Damansara follows, expanding the network to PJ.', last: false },
+  { year: '2021', event: 'Dashing Diva Plaza Damas opens in Sri Hartamas, KL.', last: false },
+  { year: 'Today', event: 'Multiple outlets across the Klang Valley — with more to come.', last: true },
 ]
 
 export default function AboutPage() {
@@ -65,13 +68,13 @@ export default function AboutPage() {
               A Salon That Gets It
             </h2>
             <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)', marginBottom: '18px' }}>
-              Dashing Diva started from a simple truth: Muslimah women deserve a salon that actually works for them. Not one where you have to plan around the floor layout, worry about who might walk in, or compromise on privacy.
+              Dashing Diva started because Muslimah women deserved a salon that actually worked for them. Not one where you plan around the floor layout, worry about who might walk in, or settle for a private room if one happens to be free.
             </p>
             <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)', marginBottom: '18px' }}>
-              We built a women-only space from the ground up — where letting your hair down isn't just a phrase. Where you can relax, take your time, and trust that the person working on your hair knows exactly what they're doing.
+              So we built the whole salon around you. Every corner, every hire, every decision made with one person in mind.
             </p>
             <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)' }}>
-              Every Dashing Diva branch runs under the license and training of Bambang Soteto — one of Malaysia's most respected hairstylists. His craft is the foundation. Your comfort is the brief.
+              Every branch runs under the license and training of Bambang Soteto. His techniques, his standards, his curriculum. You get that whether you walk into Plaza Damas or Shah Alam.
             </p>
           </div>
 
