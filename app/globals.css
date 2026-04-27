@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Base resets ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html  { scroll-behavior: smooth; }
+
+body  {
+  font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+  background: #FDF8F5;
+  color: #5C3D4A;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ── CSS custom properties ── */
+:root {
+  /* Backgrounds */
+  --cream:       #FDF8F5;
+  --cream-warm:  #FAF3EE;
+  --blush:       #F2DADE;
+  --white:       #FFFFFF;
+
+  /* Brand pink */
+  --pink:        #EFC0C8;
+  --pink-light:  #FAF3F5;
+  --pink-mid:    #E0A8B8;
+  --pink-deep:   #CC8A9E;
+
+  /* Type */
+  --warm-dark:   #2A1520;
+  --warm-mid:    #5C3D4A;
+  --muted:       #9B7880;
+  --muted-lt:    #C8ADB5;
+
+  /* Accent */
+  --yellow:      #F5C518;
+  --yellow-soft: #FEF3C0;
+
+  /* Utility */
+  --border:      rgba(180,140,155,0.20);
+  --shadow-card: 0 2px 16px rgba(42,21,32,0.07);
+  --shadow-soft: 0 4px 24px rgba(42,21,32,0.08);
+
+  /* Radii */
+  --r-sm:   12px;
+  --r-md:   20px;
+  --r-lg:   28px;
+  --r-pill: 999px;
+
+  /* Fonts */
+  --font-display: 'Bebas Neue', 'Arial Black', sans-serif;
+  --font-body:    'Poppins', 'Helvetica Neue', sans-serif;
+  --font-label:   'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+/* ── Reusable components ── */
+@layer components {
+
+  /* Section label — pink bar + caps text */
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-label);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--pink-deep);
+    margin-bottom: 12px;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--pink-mid);
+    border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .section-label-light {
+    color: var(--pink-mid);
+  }
+  .section-label-light::before {
+    background: var(--pink);
+  }
+
+  /* Standard card */
+  .card {
+    background: var(--white);
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms, box-shadow 200ms;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--r-pill);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    transition: all 200ms cubic-bezier(.34,1.56,.64,1);
+  }
+  .btn-primary {
+    background: var(--pink-deep);
+    color: var(--white);
+    padding: 13px 28px;
+    font-size: 14px;
+    box-shadow: 0 4px 16px rgba(181,99,122,0.35);
+  }
+  .btn-primary:hover {
+    background: var(--pink-mid);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(181,99,122,0.4);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--pink-deep);
+    padding: 12px 26px;
+    font-size: 14px;
+    border: 1.5px solid var(--pink-mid);
+  }
+  .btn-ghost:hover {
+    background: var(--blush);
+    transform: translateY(-1px);
+  }
+  .btn-sm {
+    padding: 10px 22px;
+    font-size: 13px;
+  }
+  .btn-white {
+    background: var(--white);
+    color: var(--pink-deep);
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  .btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.20);
+  }
+
+  /* Text link with hover gap animation */
+  .text-link {
+    font-family: var(--font-label);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pink-deep);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 150ms;
+  }
+  .text-link:hover { gap: 8px; }
+
+  /* Footer stripe */
+  .footer-stripe {
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Page hero header — light cream, blush bottom accent */
+  .page-hero {
+    background: var(--cream);
+    padding: 72px 48px 56px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Filter tab active underline */
+  .filter-tab-active {
+    color: var(--pink-deep) !important;
+    border-bottom: 2px solid var(--pink-deep) !important;
+  }
+}

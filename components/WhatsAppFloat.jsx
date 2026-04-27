@@ -1,0 +1,127 @@
+'use client'
+import { useState } from 'react'
+
+const salons = [
+  { name: 'Plaza Damas',  number: '60123096125', dot: 'var(--blush)' },
+  { name: 'Shah Alam',    number: '60125889073', dot: 'var(--pink)' },
+  { name: 'Damansara',    number: '60163541201', dot: 'var(--cream-warm)' },
+]
+
+export default function WhatsAppFloat() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <div style={{
+      position: 'fixed',
+      bottom: '28px',
+      right: '28px',
+      zIndex: 999,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-end',
+      gap: '10px',
+    }}>
+
+      {/* Expanded salon options */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px',
+        alignItems: 'flex-end',
+        transition: 'all 250ms cubic-bezier(.34,1.56,.64,1)',
+        opacity: open ? 1 : 0,
+        transform: open ? 'translateY(0) scale(1)' : 'translateY(12px) scale(0.95)',
+        pointerEvents: open ? 'auto' : 'none',
+      }}>
+        {salons.map(s => (
+          <a
+            key={s.name}
+            href={`https://wa.me/${s.number}?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Dashing%20Diva%20${encodeURIComponent(s.name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              background: 'var(--warm-dark)',
+              borderRadius: 'var(--r-pill)',
+              padding: '9px 16px 9px 12px',
+              textDecoration: 'none',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+              transition: 'transform 150ms, box-shadow 150ms',
+              whiteSpace: 'nowrap',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = 'translateY(-2px)'
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.30)'
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = 'none'
+              e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.25)'
+            }}
+          >
+            {/* Colour dot */}
+            <span style={{
+              width: '10px',
+              height: '10px',
+              borderRadius: '50%',
+              background: s.dot,
+              flexShrink: 0,
+              border: '1.5px solid rgba(255,255,255,0.20)',
+            }} />
+            <span style={{
+              fontFamily: 'var(--font-label)',
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: '#ffffff',
+            }}>
+              {s.name}
+            </span>
+          </a>
+        ))}
+      </div>
+
+      {/* Main WhatsApp button */}
+      <button
+        onClick={() => setOpen(o => !o)}
+        aria-label="Chat with us on WhatsApp"
+        style={{
+          width: '56px',
+          height: '56px',
+          borderRadius: '50%',
+          background: '#25D366',
+          border: 'none',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 4px 20px rgba(37,211,102,0.45)',
+          transition: 'transform 200ms cubic-bezier(.34,1.56,.64,1), box-shadow 200ms',
+          transform: open ? 'rotate(45deg)' : 'none',
+        }}
+        onMouseEnter={e => {
+          e.currentTarget.style.transform = open ? 'rotate(45deg) scale(1.08)' : 'scale(1.08)'
+          e.currentTarget.style.boxShadow = '0 6px 28px rgba(37,211,102,0.55)'
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.transform = open ? 'rotate(45deg)' : 'none'
+          e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,211,102,0.45)'
+        }}
+      >
+        {open ? (
+          /* Close X */
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        ) : (
+          /* WhatsApp icon */
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff">
+            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.52.688 4.877 1.888 6.898L2 30l7.302-1.858A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 0 1-5.902-1.614l-.424-.252-4.334 1.104 1.14-4.216-.278-.44A11.54 11.54 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.64c-.348-.174-2.06-1.016-2.38-1.132-.32-.116-.552-.174-.784.174-.232.348-.9 1.132-1.104 1.364-.203.232-.406.26-.754.086-.348-.174-1.47-.542-2.798-1.727-1.034-.922-1.732-2.061-1.936-2.409-.203-.348-.022-.536.153-.71.157-.156.348-.406.522-.61.174-.202.232-.348.348-.58.116-.232.058-.436-.029-.61-.087-.174-.784-1.89-1.074-2.588-.283-.68-.57-.587-.784-.598l-.668-.012c-.232 0-.61.087-.928.435-.32.348-1.218 1.19-1.218 2.904s1.247 3.37 1.42 3.602c.174.232 2.454 3.748 5.945 5.258.831.358 1.48.572 1.986.732.834.265 1.594.228 2.194.138.67-.1 2.06-.842 2.35-1.656.29-.814.29-1.512.203-1.656-.087-.144-.319-.232-.667-.406z"/>
+          </svg>
+        )}
+      </button>
+    </div>
+  )
+}
