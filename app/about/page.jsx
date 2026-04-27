@@ -44,8 +44,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── OPENING STATEMENT ── */}
-      <section style={{ background: 'var(--cream)', padding: '80px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="rg-2" style={{ maxWidth: '1100px', margin: '0 auto', gap: '80px', alignItems: 'center' }}>
 
           {/* Salon interior photo */}
           <div style={{
@@ -83,13 +83,13 @@ export default function AboutPage() {
       </section>
 
       {/* ── THREE PILLARS ── */}
-      <section style={{ background: 'var(--cream-warm)', padding: '64px 48px' }}>
+      <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div className="section-label">What We Stand For</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
             Our Pillars
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+          <div className="rg-3" style={{ gap: '20px' }}>
             {pillars.map((p) => (
               <div key={p.number} className="card" style={{ padding: '32px 28px' }}>
                 <div style={{
@@ -114,8 +114,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── BAMBANG CALLOUT ── */}
-      <section style={{ background: 'var(--blush)', padding: '80px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+      <section className="sp" style={{ background: 'var(--blush)', paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="rg-2" style={{ maxWidth: '1100px', margin: '0 auto', gap: '80px', alignItems: 'center' }}>
 
           {/* Copy */}
           <div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── TIMELINE ── */}
-      <section style={{ background: 'var(--warm-dark)', borderRadius: '0 0 var(--r-lg) var(--r-lg)', padding: '80px 48px' }}>
+      <section className="sp" style={{ background: 'var(--warm-dark)', borderRadius: '0 0 var(--r-lg) var(--r-lg)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto' }}>
           <div className="section-label section-label-light">How We Got Here</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: '#FFFFFF', lineHeight: 0.93, marginBottom: '56px' }}>
@@ -180,7 +180,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section style={{ background: 'var(--cream)', padding: '80px 48px', textAlign: 'center' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '80px', paddingBottom: '80px', textAlign: 'center' }}>
         <div style={{ maxWidth: '560px', margin: '0 auto' }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>Come Visit</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '16px' }}>

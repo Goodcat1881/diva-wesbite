@@ -50,7 +50,7 @@ export default function BambangPage() {
 
       {/* ── HERO ── */}
       <section style={{ background: 'var(--warm-dark)', overflow: 'hidden' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '380px 1fr', minHeight: '520px' }}>
+        <div className="rg-bambang" style={{ maxWidth: '1100px', margin: '0 auto', minHeight: '520px' }}>
 
           {/* Hero photo */}
           <div style={{ overflow: 'hidden', minHeight: '520px' }}>
@@ -62,7 +62,7 @@ export default function BambangPage() {
           </div>
 
           {/* Copy */}
-          <div style={{ padding: '72px 56px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div className="sp" style={{ paddingTop: '72px', paddingBottom: '72px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div className="section-label section-label-light">Our Founder</div>
             <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(48px, 6vw, 80px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: '#FFFFFF', lineHeight: 0.92, marginBottom: '8px' }}>
               BAMBANG{' '}
@@ -80,13 +80,13 @@ export default function BambangPage() {
       </section>
 
       {/* ── CREDENTIALS ── */}
-      <section style={{ background: 'var(--cream)', padding: '64px 48px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div className="section-label">Career</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
             Credentials
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+          <div className="rg-3" style={{ gap: '16px' }}>
             {credentials.map((c) => (
               <div key={c.title} className="card" style={{ padding: '28px 24px' }}>
                 <p style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--pink-deep)', marginBottom: '10px' }}>
@@ -105,8 +105,8 @@ export default function BambangPage() {
       </section>
 
       {/* ── STORY ── */}
-      <section style={{ background: 'var(--cream-warm)', padding: '80px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
+      <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="rg-2" style={{ maxWidth: '1100px', margin: '0 auto', gap: '80px', alignItems: 'start' }}>
 
           {/* Photo */}
           <div style={{ position: 'sticky', top: '88px' }}>
@@ -192,7 +192,7 @@ export default function BambangPage() {
       </section>
 
       {/* ── PULL QUOTE ── */}
-      <section style={{ background: 'var(--blush)', padding: '80px 48px' }}>
+      <section className="sp" style={{ background: 'var(--blush)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ borderLeft: '3px solid var(--pink-mid)', paddingLeft: '32px' }}>
             <p style={{ fontSize: 'clamp(17px, 2.5vw, 22px)', lineHeight: 1.7, color: 'var(--warm-dark)', fontStyle: 'italic', marginBottom: '20px' }}>
@@ -206,8 +206,8 @@ export default function BambangPage() {
       </section>
 
       {/* ── HAIRKUNST FLAGSHIP ── */}
-      <section style={{ background: 'var(--warm-dark)', borderRadius: '0 0 var(--r-lg) var(--r-lg)', padding: '80px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+      <section className="sp" style={{ background: 'var(--warm-dark)', borderRadius: '0 0 var(--r-lg) var(--r-lg)', paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="rg-2" style={{ maxWidth: '1100px', margin: '0 auto', gap: '64px', alignItems: 'center' }}>
 
           {/* Copy */}
           <div>
@@ -242,8 +242,8 @@ export default function BambangPage() {
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section style={{ background: 'var(--cream)', padding: '72px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr auto', gap: '48px', alignItems: 'center' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '72px', paddingBottom: '72px' }}>
+        <div className="rg-cta" style={{ maxWidth: '1100px', margin: '0 auto', gap: '48px' }}>
           <p style={{ fontSize: '17px', lineHeight: 1.7, color: 'var(--warm-dark)', maxWidth: '540px' }}>
             The standard Bambang built Hairkunst on is the same standard Dashing Diva holds itself to — at a price point that works for everyone.
           </p>

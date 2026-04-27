@@ -34,8 +34,8 @@ export default function Footer() {
     <>
       <div className="footer-stripe" />
 
-      <footer style={{ background: 'var(--warm-dark)', padding: '56px 48px 48px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr 1fr', gap: '40px', maxWidth: '1200px', margin: '0 auto' }}>
+      <footer className="sp" style={{ background: 'var(--warm-dark)', paddingTop: '56px', paddingBottom: '48px' }}>
+        <div className="rg-footer" style={{ gap: '40px' }}>
 
           {/* Brand col */}
           <div>
@@ -111,9 +111,10 @@ export default function Footer() {
       </footer>
 
       {/* Copyright bar */}
-      <div style={{
+      <div className="sp" style={{
         background: '#1d0f18',
-        padding: '14px 48px',
+        paddingTop: '14px',
+        paddingBottom: '14px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',

@@ -37,9 +37,9 @@ export default function BlogClient({ posts = [] }) {
 
       {/* ── FEATURED POST ── */}
       {active === 'All' && featured && (
-        <section style={{ background: 'var(--cream)', padding: '48px 48px 0' }}>
+        <section className="sp" style={{ background: 'var(--cream)', paddingTop: '48px', paddingBottom: 0 }}>
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-            <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', overflow: 'hidden', padding: 0 }}>
+            <div className="card rg-2" style={{ overflow: 'hidden', padding: 0 }}>
               {/* Image */}
               <div style={{ background: 'var(--pink)', minHeight: '340px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {featured.image ? (
@@ -86,7 +86,7 @@ export default function BlogClient({ posts = [] }) {
       )}
 
       {/* ── FILTER TABS ── */}
-      <nav style={{ background: 'var(--cream)', padding: '0 48px', borderBottom: '1px solid var(--border)', overflowX: 'auto' }}>
+      <nav className="sp" style={{ background: 'var(--cream)', paddingTop: 0, paddingBottom: 0, borderBottom: '1px solid var(--border)', overflowX: 'auto' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex' }}>
           {categories.map(c => (
             <button
@@ -118,9 +118,9 @@ export default function BlogClient({ posts = [] }) {
       </nav>
 
       {/* ── POST GRID ── */}
-      <section style={{ background: 'var(--cream)', padding: '48px 48px 80px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '48px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+          <div className="rg-3" style={{ gap: '20px' }}>
             {grid.map(post => (
               <article key={post._id} className="card" style={{ overflow: 'hidden', display: 'flex', flexDirection: 'column', padding: 0, cursor: 'pointer' }}>
                 {/* Thumbnail */}

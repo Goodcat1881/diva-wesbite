@@ -131,13 +131,13 @@ export default function CareersPage() {
       </section>
 
       {/* ── WHY WORK HERE ── */}
-      <section style={{ background: 'var(--cream)', padding: '64px 48px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div className="section-label">Why Us</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '40px' }}>
             What You Get
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
+          <div className="rg-2" style={{ gap: '16px' }}>
             {perks.map((p) => (
               <div key={p.title} className="card" style={{ padding: '32px 28px' }}>
                 <div style={{ fontSize: '24px', marginBottom: '12px' }}>{p.icon}</div>
@@ -154,7 +154,7 @@ export default function CareersPage() {
       </section>
 
       {/* ── TEAM PHOTO ── */}
-      <section style={{ background: 'var(--cream)', padding: '0 48px 64px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: 0, paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ borderRadius: 'var(--r-lg)', overflow: 'hidden', position: 'relative', boxShadow: 'var(--shadow-soft)' }}>
             <img
@@ -183,7 +183,7 @@ export default function CareersPage() {
       </section>
 
       {/* ── OPEN ROLES ── */}
-      <section style={{ background: 'var(--cream-warm)', padding: '64px 48px' }}>
+      <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div className="section-label">Open Positions</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '36px' }}>
@@ -272,7 +272,7 @@ export default function CareersPage() {
       </section>
 
       {/* ── APPLICATION FORM ── */}
-      <section id="apply" style={{ background: 'var(--blush)', padding: '80px 48px' }}>
+      <section id="apply" className="sp" style={{ background: 'var(--blush)', paddingTop: '80px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <div className="section-label">Open Application</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '48px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '12px' }}>

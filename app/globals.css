@@ -200,3 +200,63 @@ img { display: block; max-width: 100%; }
     border-bottom: 2px solid var(--pink-deep) !important;
   }
 }
+
+/* ════════════════════════════════════════════════
+   RESPONSIVE LAYOUT — Grid Utilities & Mobile CSS
+   ════════════════════════════════════════════════ */
+
+/* Grid column blueprints — gaps/padding stay in inline styles */
+.rg-2       { display: grid; grid-template-columns: 1fr 1fr; }
+.rg-3       { display: grid; grid-template-columns: repeat(3, 1fr); }
+.rg-4       { display: grid; grid-template-columns: repeat(4, 1fr); }
+.rg-sidebar { display: grid; grid-template-columns: 280px 1fr; }
+.rg-founder { display: grid; grid-template-columns: 280px 1fr 1fr; }
+.rg-bambang { display: grid; grid-template-columns: 380px 1fr; }
+.rg-cta     { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+.rg-footer  { display: grid; grid-template-columns: 1.8fr 1fr 1fr; max-width: 1200px; margin: 0 auto; }
+
+/* Section horizontal padding — override on mobile */
+.sp { padding-left: 48px; padding-right: 48px; }
+
+/* Nav helpers — default state (desktop) */
+.nav-hamburger    { display: none; }
+.nav-book-desktop { display: inline-flex; }
+
+/* ── Tablet: 769px – 1024px ── */
+@media (max-width: 1024px) {
+  .rg-3       { grid-template-columns: repeat(2, 1fr); }
+  .rg-4       { grid-template-columns: repeat(2, 1fr); }
+  .rg-founder { grid-template-columns: 1fr 1fr; }
+  .rg-bambang { grid-template-columns: 1fr 1fr; }
+  .sp         { padding-left: 32px; padding-right: 32px; }
+}
+
+/* ── Mobile: ≤ 768px ── */
+@media (max-width: 768px) {
+  /* Collapse all grids to single column */
+  .rg-2, .rg-3, .rg-4,
+  .rg-sidebar, .rg-founder, .rg-bambang,
+  .rg-cta, .rg-footer {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section horizontal padding */
+  .sp { padding-left: 20px; padding-right: 20px; }
+
+  /* Page hero */
+  .page-hero { padding: 44px 20px 32px; }
+
+  /* Nav: show hamburger, hide desktop links & CTA */
+  .nav-hamburger     { display: flex; }
+  .nav-links-desktop { display: none !important; }
+  .nav-book-desktop  { display: none !important; }
+
+  /* Unstick sticky sidebar columns */
+  .rg-sidebar > *:first-child { position: static !important; top: auto !important; }
+
+  /* Hero image panel: give it a sensible height when stacked */
+  .hero-img-panel { min-height: 280px !important; }
+
+  /* Bambang hero: cap image height when stacked */
+  .rg-bambang > *:first-child { min-height: 320px !important; max-height: 380px; }
+}

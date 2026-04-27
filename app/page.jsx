@@ -36,27 +36,14 @@ const salons = [
   { bg: 'var(--cream-warm)', photo: '/images/hairlibrary-1.avif', name: 'Damansara',    area: 'Mutiara Damansara, PJ', hours: 'Mon – Sat: 10am – 8pm', address: 'Hair Library, 21, Jalan PJU 7/7a, Mutiara Damansara, 47800 Petaling Jaya, Selangor' },
 ]
 
-/* ── Image placeholder SVG ── */
-function ImgPlaceholder({ label, sub }) {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', color: 'var(--muted-lt)' }}>
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5 }}>
-        <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
-      </svg>
-      {label && <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.6 }}>{label}</span>}
-      {sub && <span style={{ fontSize: '11px', textAlign: 'center', maxWidth: '140px', lineHeight: 1.5, opacity: 0.4 }}>{sub}</span>}
-    </div>
-  )
-}
-
 export default function HomePage() {
   return (
     <>
       {/* ══ HERO ══ */}
-      <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: '560px', background: 'var(--cream)' }}>
+      <section className="rg-2" style={{ minHeight: '560px', background: 'var(--cream)' }}>
 
         {/* Left: copy */}
-        <div style={{ padding: '64px 56px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '22px' }}>
+        <div className="sp" style={{ paddingTop: '64px', paddingBottom: '64px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '22px' }}>
 
           {/* Eyebrow badge */}
           <div style={{
@@ -70,7 +57,7 @@ export default function HomePage() {
             ✦ Ladies Only
           </div>
 
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '72px', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(38px, 7vw, 72px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
             The Muslimah Salon<br />
             <span style={{ color: 'var(--pink-deep)' }}>You've Been Looking For</span>
           </h1>
@@ -92,7 +79,7 @@ export default function HomePage() {
         </div>
 
         {/* Right: hero image panel */}
-        <div style={{
+        <div className="hero-img-panel" style={{
           position: 'relative', overflow: 'hidden',
           background: 'var(--blush)',
           borderRadius: '0 0 0 var(--r-lg)',
@@ -107,7 +94,7 @@ export default function HomePage() {
       </section>
 
       {/* ══ PILLARS ══ */}
-      <section style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', background: 'var(--cream)', padding: '40px 48px' }}>
+      <section className="rg-4 sp" style={{ gap: '16px', background: 'var(--cream)', paddingTop: '40px', paddingBottom: '40px' }}>
         {[
           { icon: '🔒', title: 'Fully Women Only', body: "From the person who cuts your hair to the one who makes your tea, every staff member here is a woman. You don't need to call ahead and ask. It's the whole point." },
           { icon: '✂️', title: 'Craft You Can See in Every Result', body: 'Bambang Soteto built his name doing the work properly. Every service here follows the same approach. No rushing, no shortcuts. You\'ll see it in the result.' },
@@ -130,17 +117,17 @@ export default function HomePage() {
       </section>
 
       {/* ══ SERVICES ══ */}
-      <section style={{ padding: '64px 48px', background: 'var(--cream-warm)' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '32px' }}>
+      <section className="sp" style={{ paddingTop: '64px', paddingBottom: '64px', background: 'var(--cream-warm)' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '32px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">What we offer</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '48px', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
               SERVICES &<br />PRICING
             </div>
           </div>
           <Link href="/services" className="text-link">See all services →</Link>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
+        <div className="rg-4" style={{ gap: '16px' }}>
           {services.map((s, i) => (
             <div key={i} style={{
               background: s.bg,
@@ -210,12 +197,10 @@ export default function HomePage() {
       </section>
 
       {/* ══ FOUNDER ══ */}
-      <section style={{
+      <section className="rg-founder" style={{
         background: 'var(--warm-dark)',
         borderRadius: '0 0 var(--r-lg) var(--r-lg)',
         overflow: 'hidden',
-        display: 'grid',
-        gridTemplateColumns: '280px 1fr 1fr',
       }}>
         {/* Photo col */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '52px 28px' }}>
@@ -245,7 +230,7 @@ export default function HomePage() {
         {/* Text col */}
         <div style={{ padding: '64px 40px 64px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '14px', borderRight: '1px solid rgba(255,255,255,0.07)' }}>
           <div className="section-label section-label-light">Our Creative Director</div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: '44px', lineHeight: 0.93, textTransform: 'uppercase', color: '#FFFFFF' }}>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', lineHeight: 0.93, textTransform: 'uppercase', color: '#FFFFFF' }}>
             THE MIND<br />BEHIND<br /><span style={{ color: 'var(--pink)' }}>DASHING DIVA</span>
           </div>
           <div style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted-lt)' }}>
@@ -298,17 +283,17 @@ export default function HomePage() {
       </section>
 
       {/* ══ GALLERY ══ */}
-      <section style={{ padding: '64px 48px', background: 'var(--cream)' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px' }}>
+      <section className="sp" style={{ paddingTop: '64px', paddingBottom: '64px', background: 'var(--cream)' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">Portfolio</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '48px', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
               THE WORK
             </div>
           </div>
           <Link href="/gallery" className="text-link">See full gallery →</Link>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+        <div className="rg-3" style={{ gap: '16px' }}>
           {galleryItems.map((g, i) => (
             <GalleryItem key={i} bg={g.bg} label={g.label} photo={g.photo} />
           ))}
@@ -316,12 +301,12 @@ export default function HomePage() {
       </section>
 
       {/* ══ REVIEWS ══ */}
-      <section style={{ padding: '64px 0', background: 'var(--blush)', overflow: 'hidden' }}>
+      <section style={{ paddingTop: '64px', paddingBottom: '64px', background: 'var(--blush)', overflow: 'hidden' }}>
         {/* Header */}
-        <div style={{ padding: '0 48px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '36px' }}>
+        <div className="sp" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '36px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">Client Reviews</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: '48px', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
               WHAT OUR<br />CLIENTS SAY
             </div>
           </div>
@@ -362,14 +347,14 @@ export default function HomePage() {
       </section>
 
       {/* ══ SALONS ══ */}
-      <section style={{ padding: '64px 48px', background: 'var(--cream-warm)' }}>
+      <section className="sp" style={{ paddingTop: '64px', paddingBottom: '64px', background: 'var(--cream-warm)' }}>
         <div style={{ marginBottom: '32px' }}>
           <div className="section-label">Locations</div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: '48px', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
             FIND YOUR<br />NEAREST SALON
           </div>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+        <div className="rg-3" style={{ gap: '16px' }}>
           {salons.map((s, i) => (
             <SalonCard key={i} salon={s} />
           ))}
@@ -438,6 +423,14 @@ export default function HomePage() {
           border-color: var(--pink-deep);
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(181,99,122,0.30);
+        }
+
+        /* ── Mobile overrides ── */
+        @media (max-width: 768px) {
+          /* Founder section: remove column divider on mobile */
+          .rg-founder > *:nth-child(2) { border-right: none !important; }
+          /* Founder stats: remove top padding on first stat when stacked */
+          .rg-founder > *:last-child { padding-top: 0; }
         }
       `}</style>
     </>

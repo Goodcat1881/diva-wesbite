@@ -134,7 +134,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── WEEKDAY PROMOS ── */}
-      <section style={{ background: 'var(--yellow-soft)', padding: '48px 48px' }}>
+      <section className="sp" style={{ background: 'var(--yellow-soft)', paddingTop: '48px', paddingBottom: '48px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div className="section-label">Limited Time</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '36px', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '28px' }}>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── CATEGORY ANCHOR STRIP ── */}
-      <nav style={{ background: 'var(--white)', borderBottom: '1px solid var(--border)', padding: '0 48px', overflowX: 'auto', whiteSpace: 'nowrap' }}>
+      <nav className="sp" style={{ background: 'var(--white)', borderBottom: '1px solid var(--border)', paddingTop: 0, paddingBottom: 0, overflowX: 'auto', whiteSpace: 'nowrap' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', gap: '0' }}>
           {categories.map(c => (
             <a
@@ -187,11 +187,11 @@ export default function ServicesPage() {
       </nav>
 
       {/* ── SERVICE CATEGORIES ── */}
-      <section style={{ background: 'var(--cream-warm)', padding: '64px 48px' }}>
+      <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '64px' }}>
 
           {categories.map((cat) => (
-            <div key={cat.id} id={cat.id} style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: '40px', alignItems: 'start' }}>
+            <div key={cat.id} id={cat.id} className="rg-sidebar" style={{ gap: '40px', alignItems: 'start' }}>
 
               {/* Sticky sidebar */}
               <div style={{ position: 'sticky', top: '80px' }}>
@@ -279,8 +279,8 @@ export default function ServicesPage() {
       </section>
 
       {/* ── SATISFACTION GUARANTEE ── */}
-      <section style={{ background: 'var(--warm-dark)', padding: '56px 48px' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '80px 1fr', gap: '32px', alignItems: 'center' }}>
+      <section className="sp" style={{ background: 'var(--warm-dark)', paddingTop: '56px', paddingBottom: '56px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'flex', gap: '32px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
           {/* Shield icon */}
           <div style={{
             width: '80px', height: '80px', borderRadius: '50%',
@@ -318,7 +318,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section style={{ background: 'var(--cream)', padding: '72px 48px', textAlign: 'center' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '72px', paddingBottom: '72px', textAlign: 'center' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>Ready?</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '16px' }}>

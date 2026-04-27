@@ -47,8 +47,8 @@ export default function SalonsPage() {
       </section>
 
       {/* ── SALON CARDS ── */}
-      <section style={{ background: 'var(--cream)', padding: '64px 48px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
+        <div className="rg-3" style={{ maxWidth: '1100px', margin: '0 auto', gap: '20px' }}>
           {salons.map((s, i) => (
             <div key={i} className="card" style={{ overflow: 'hidden', padding: 0 }}>
               {/* Image */}
@@ -89,7 +89,7 @@ export default function SalonsPage() {
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section style={{ background: 'var(--blush)', padding: '64px 48px', textAlign: 'center' }}>
+      <section className="sp" style={{ background: 'var(--blush)', paddingTop: '64px', paddingBottom: '64px', textAlign: 'center' }}>
         <div style={{ maxWidth: '560px', margin: '0 auto' }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>Questions?</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '14px' }}>

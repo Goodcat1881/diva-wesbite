@@ -41,7 +41,7 @@ export default function GalleryPage() {
       </section>
 
       {/* ── FILTER TABS ── */}
-      <nav style={{ background: 'var(--white)', borderBottom: '1px solid var(--border)', padding: '0 48px', overflowX: 'auto' }}>
+      <nav className="sp" style={{ background: 'var(--white)', borderBottom: '1px solid var(--border)', paddingTop: 0, paddingBottom: 0, overflowX: 'auto' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', gap: '0' }}>
           {filters.map(f => (
             <button
@@ -74,7 +74,7 @@ export default function GalleryPage() {
       </nav>
 
       {/* ── MASONRY GRID ── */}
-      <section style={{ background: 'var(--cream)', padding: '48px 48px 80px' }}>
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '48px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
           <style>{`
@@ -161,7 +161,7 @@ export default function GalleryPage() {
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section style={{ background: 'var(--blush)', padding: '64px 48px', textAlign: 'center' }}>
+      <section className="sp" style={{ background: 'var(--blush)', paddingTop: '64px', paddingBottom: '64px', textAlign: 'center' }}>
         <div style={{ maxWidth: '560px', margin: '0 auto' }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>Book a Session</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '14px' }}>
