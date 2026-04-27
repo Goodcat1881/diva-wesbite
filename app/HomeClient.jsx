@@ -63,7 +63,7 @@ export default function HomePage() {
           </h1>
 
           <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)', maxWidth: '380px', margin: 0 }}>
-            Most salons give you one private room if you're lucky enough to book it in time. Dashing Diva is a dedicated salon muslimah in KL — the whole space is private, every stylist is a woman, and the price covers what you came for. Nothing else.
+            Most salons give you one private room if you're lucky enough to book it in time. Dashing Diva is a dedicated salon muslimah across the Klang Valley — the whole space is private, every stylist is a woman, and the price covers what you came for. Nothing else.
           </p>
 
           {/* CTA buttons */}
