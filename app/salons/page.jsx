@@ -1,5 +1,15 @@
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Our Salon Locations',
+  description: 'Find your nearest Dashing Diva branch — Plaza Damas (Sri Hartamas, KL), Shah Alam, and Damansara. Book via Fresha or WhatsApp us directly.',
+  openGraph: {
+    title: 'Our Salon Locations — KL, Shah Alam & Damansara | Dashing Diva',
+    description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Open Mon–Sat, 10am–8pm.',
+    url: 'https://www.dashingdiva.my/salons',
+  },
+}
+
 const salons = [
   {
     bg: 'var(--blush)',

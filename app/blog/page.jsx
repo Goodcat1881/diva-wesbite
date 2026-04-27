@@ -18,6 +18,16 @@ const QUERY = `*[_type == "blogPost"] | order(publishedAt desc) {
   image
 }`
 
+export const metadata = {
+  title: 'Hair Tips & Guides',
+  description: 'Hair care tips, style guides, and treatment explainers from the stylists at Dashing Diva — Muslimah hair salon in KL, Shah Alam, and Damansara.',
+  openGraph: {
+    title: 'Hair Tips & Guides — Dashing Diva Blog',
+    description: 'Colour guides, treatment explainers, and hair care tips for Muslimah women from the team at Dashing Diva.',
+    url: 'https://www.dashingdiva.my/blog',
+  },
+}
+
 export const revalidate = 60 // re-fetch every 60 seconds
 
 export default async function BlogPage() {
