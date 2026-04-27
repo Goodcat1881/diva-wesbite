@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Find your nearest Dashing Diva branch — Plaza Damas (Sri Hartamas, KL), Shah Alam, and Damansara. Book via Fresha or WhatsApp us directly.',
   openGraph: {
     title: 'Our Salon Locations — KL, Shah Alam & Damansara | Dashing Diva',
-    description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Open Mon–Sat, 10am–8pm.',
+    description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Open Mon–Sat.',
     url: 'https://www.dashingdiva.my/salons',
   },
   robots: {
@@ -20,27 +20,27 @@ const salons = [
     photo: '/images/salon-plazadamas-1.jpg',
     name: 'Plaza Damas',
     area: 'Sri Hartamas, KL',
-    hours: 'Mon – Sat: 10am – 8pm',
+    hours: 'Mon – Sat: 10am – 7pm',
     address: 'M-0-13, Block M, Plaza Damas, Jalan Sri Hartamas 1, Taman Sri Hartamas, 50480 Kuala Lumpur',
-    maps: 'https://maps.google.com',
+    maps: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur',
   },
   {
     bg: 'var(--pink)',
     photo: '/images/salon-shahalam-1.jpg',
     name: 'Shah Alam',
     area: 'Shah Alam, Selangor',
-    hours: 'Mon – Sat: 10am – 8pm',
+    hours: 'Mon – Sat: 10am – 7pm',
     address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',
-    maps: 'https://maps.google.com',
+    maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor',
   },
   {
     bg: 'var(--cream-warm)',
     photo: '/images/salon-damansara-1.jpg',
     name: 'Damansara',
     area: 'Mutiara Damansara, PJ',
-    hours: 'Mon – Sat: 10am – 8pm',
+    hours: 'Mon – Sat: 11am – 8pm',
     address: 'Hair Library, 21, Jalan PJU 7/7a, Mutiara Damansara, 47800 Petaling Jaya, Selangor',
-    maps: 'https://maps.google.com',
+    maps: 'https://www.google.com/maps/search/?api=1&query=Hair+Library+21+Jalan+PJU+7+7a+Mutiara+Damansara+47800+Petaling+Jaya+Selangor',
   },
 ]
 
