@@ -30,13 +30,21 @@ async function getPost(slug) {
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug)
   if (!post) return {}
+  const slugPath = `/blog/${post.slug?.current}`
   return {
     title: `${post.title} | Dashing Diva`,
     description: post.excerpt,
+    alternates: {
+      canonical: slugPath,
+      languages: {
+        'en-MY': slugPath,
+        'x-default': slugPath,
+      },
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.dashingdiva.my/blog/${post.slug?.current}`,
+      url: `https://www.dashingdiva.my${slugPath}`,
     },
   }
 }

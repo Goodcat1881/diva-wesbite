@@ -121,9 +121,9 @@ export default function HomePage() {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '32px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">What we offer</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
               SERVICES &<br />PRICING
-            </div>
+            </h2>
           </div>
           <Link href="/services" className="text-link">See all services →</Link>
         </div>
@@ -230,9 +230,9 @@ export default function HomePage() {
         {/* Text col */}
         <div style={{ padding: '64px 40px 64px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '14px', borderRight: '1px solid rgba(255,255,255,0.07)' }}>
           <div className="section-label section-label-light">Our Creative Director</div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', lineHeight: 0.93, textTransform: 'uppercase', color: '#FFFFFF' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', lineHeight: 0.93, textTransform: 'uppercase', color: '#FFFFFF', margin: 0 }}>
             THE MIND<br />BEHIND<br /><span style={{ color: 'var(--pink)' }}>DASHING DIVA</span>
-          </div>
+          </h2>
           <div style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted-lt)' }}>
             Bambang Soteto — Founder &amp; Creative Director
           </div>
@@ -287,9 +287,9 @@ export default function HomePage() {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">Portfolio</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
               THE WORK
-            </div>
+            </h2>
           </div>
           <Link href="/gallery" className="text-link">See full gallery →</Link>
         </div>
@@ -306,9 +306,9 @@ export default function HomePage() {
         <div className="sp" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '36px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
             <div className="section-label">Client Reviews</div>
-            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
               WHAT OUR<br />CLIENTS SAY
-            </div>
+            </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ color: 'var(--yellow)', fontSize: '18px', letterSpacing: '3px' }}>★★★★★</span>
@@ -350,9 +350,9 @@ export default function HomePage() {
       <section className="sp" style={{ paddingTop: '64px', paddingBottom: '64px', background: 'var(--cream-warm)' }}>
         <div style={{ marginBottom: '32px' }}>
           <div className="section-label">Locations</div>
-          <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
             FIND YOUR<br />NEAREST SALON
-          </div>
+          </h2>
         </div>
         <div className="rg-3" style={{ gap: '16px' }}>
           {salons.map((s, i) => (

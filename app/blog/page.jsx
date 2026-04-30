@@ -21,6 +21,13 @@ const QUERY = `*[_type == "blogPost"] | order(publishedAt desc) {
 export const metadata = {
   title: 'Hair Tips & Guides',
   description: 'Hair care tips, style guides, and treatment explainers from the stylists at Dashing Diva — Muslimah hair salon in KL, Shah Alam, and Damansara.',
+  alternates: {
+    canonical: '/blog',
+    languages: {
+      'en-MY': '/blog',
+      'x-default': '/blog',
+    },
+  },
   openGraph: {
     title: 'Hair Tips & Guides — Dashing Diva Blog',
     description: 'Colour guides, treatment explainers, and hair care tips for Muslimah women from the team at Dashing Diva.',

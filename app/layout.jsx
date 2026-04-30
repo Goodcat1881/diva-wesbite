@@ -6,30 +6,40 @@ import WhatsAppFloat from '@/components/WhatsAppFloat'
 export const metadata = {
   metadataBase: new URL('https://www.dashingdiva.my'),
   title: {
-    default: 'Muslimah Hair Salon KL — Dashing Diva',
-    template: '%s | Dashing Diva',
+    default: 'Dashing Diva Malaysia — Muslimah Hair Salon in KL, PJ & Shah Alam',
+    template: '%s | Dashing Diva Malaysia',
   },
-  description: 'Dashing Diva is a women-only Muslimah hair salon with branches in KL, Shah Alam, and Damansara. Quality hair care at honest prices. Book now on Fresha.',
+  description: 'A women-only Muslimah hair salon with branches in Kuala Lumpur, Petaling Jaya, and Shah Alam. Quality hair care at honest prices. Book now on Fresha.',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-MY': '/',
+      'x-default': '/',
+    },
+  },
+  icons: {
+    icon: '/logo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_MY',
     url: 'https://www.dashingdiva.my',
-    siteName: 'Dashing Diva',
-    title: 'Muslimah Hair Salon KL — Dashing Diva',
-    description: 'Dashing Diva is a women-only Muslimah hair salon with branches in KL, Shah Alam, and Damansara. Quality hair care at honest prices.',
+    siteName: 'Dashing Diva Malaysia',
+    title: 'Dashing Diva Malaysia — Muslimah Hair Salon in KL, PJ & Shah Alam',
+    description: 'A women-only Muslimah hair salon with branches in Kuala Lumpur, Petaling Jaya, and Shah Alam. Quality hair care at honest prices.',
     images: [
       {
         url: '/images/hero-02.png',
         width: 1200,
         height: 630,
-        alt: 'Dashing Diva — Muslimah Hair Salon KL',
+        alt: 'Dashing Diva Malaysia — Muslimah Hair Salon',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muslimah Hair Salon KL — Dashing Diva',
-    description: 'Women-only Muslimah hair salon in KL, Shah Alam & Damansara. Honest prices. 7-day satisfaction guarantee.',
+    title: 'Dashing Diva Malaysia — Muslimah Hair Salon in KL, PJ & Shah Alam',
+    description: 'Women-only Muslimah hair salon in KL, Shah Alam & PJ. Honest prices. 7-day satisfaction guarantee.',
     images: ['/images/hero-02.png'],
   },
   robots: {
@@ -107,7 +117,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en-MY">
       <head>
         <script
           type="application/ld+json"
