@@ -9,8 +9,8 @@ export const metadata = {
     url: 'https://www.dashingdiva.my/salons',
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 }
 
