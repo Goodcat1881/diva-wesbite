@@ -42,6 +42,13 @@ const jsonLd = {
     longitude: 101.6572,
   },
   hasMap: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.3',
+    bestRating: '5',
+    worstRating: '1',
+    ratingCount: '111',
+  },
   sameAs: [
     'https://www.instagram.com/dashingdivamalaysia/',
     'https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true',
@@ -125,6 +132,17 @@ const faqJsonLd = {
   ],
 }
 
+/* ── Breadcrumb JSON-LD ── */
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home',       item: 'https://www.dashingdiva.my' },
+    { '@type': 'ListItem', position: 2, name: 'Salons',     item: 'https://www.dashingdiva.my/salons' },
+    { '@type': 'ListItem', position: 3, name: 'Plaza Damas', item: 'https://www.dashingdiva.my/salons/plaza-damas' },
+  ],
+}
+
 /* ── Data ── */
 const pillars = [
   { icon: '🔒', title: 'Fully Women Only',           body: "Every stylist and every staff member here is a woman. You don't need to call ahead and ask. It's the whole point." },
@@ -160,20 +178,22 @@ const stylists = [
   {
     name: 'Tina',
     photo: '/images/tina-profile-pic.webp',
+    alt: 'Tina, keratin and rebonding specialist at Dashing Diva Plaza Damas, Muslimah hair salon Sri Hartamas',
     years: '4 Years Experience',
     joined: null,
     personality: 'The mama bear of the salon. Cheerful, warm, and you\'re at ease before you\'re even in the chair.',
-    bio: 'Tina spent years running her own restaurant before retraining as a hairstylist. She studied under Bambang for a full year before joining the team. She might be newer to the industry, but you wouldn\'t know it from the results or the way she runs the floor.',
+    bio: 'Tina spent years running her own restaurant before retraining as a hairstylist. She studied under Bambang for a full year before joining the team at Plaza Damas. She might be newer to the industry, but you wouldn\'t know it from the results or the way she runs the floor.',
     specialisms: ['Keratin', 'Rebonding', 'Perming'],
     bg: 'var(--blush)',
   },
   {
     name: 'Dila',
     photo: '/images/dila-profile-pic.webp',
+    alt: 'Dila, hair colour and balayage specialist at Dashing Diva Plaza Damas, Muslimah hair salon Sri Hartamas',
     years: '8 Years Experience',
     joined: null,
     personality: 'Quieter at first, but once she warms up to you, she\'s a regular chatterbox. Her clients keep coming back for both the hair and the conversation.',
-    bio: 'Dila started working with Bambang right after high school as a shampoo girl and worked her way up through every role in the salon. Eight years of hands-on experience means she\'s seen and fixed almost everything. She knows colour the way some people know a second language.',
+    bio: 'Dila started working with Bambang right after high school as a shampoo girl and worked her way up through every role in the salon. Eight years at Plaza Damas means she\'s seen and fixed almost everything. She knows colour the way some people know a second language.',
     specialisms: ['Hair Colour', 'Highlights', 'Balayage', 'Cuts'],
     bg: 'var(--cream-warm)',
   },
@@ -199,6 +219,7 @@ export default function PlazaDamasPage() {
       {/* ── JSON-LD ── */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* ══ 1. HERO — split layout ══ */}
       <section className="hero-split" style={{ background: 'var(--cream)', minHeight: '520px', display: 'flex', alignItems: 'stretch', overflow: 'hidden' }}>
@@ -373,6 +394,7 @@ export default function PlazaDamasPage() {
             <img
               src="/images/salon-plazadamas-waiting.webp"
               alt="Dashing Diva Plaza Damas waiting area with teal velvet chairs, Sri Hartamas KL"
+              loading="lazy"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%', display: 'block', position: 'absolute', inset: 0 }}
             />
             <div style={{
@@ -418,7 +440,8 @@ export default function PlazaDamasPage() {
                   {s.photo ? (
                     <img
                       src={s.photo}
-                      alt={`${s.name}, stylist at Dashing Diva Plaza Damas`}
+                      alt={s.alt || `${s.name}, stylist at Dashing Diva Plaza Damas`}
+                      loading="lazy"
                       style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center', display: 'block', position: 'absolute', inset: 0 }}
                     />
                   ) : (
@@ -607,6 +630,7 @@ export default function PlazaDamasPage() {
             <img
               src="/images/qnails-interior.webp"
               alt="Q Nails interior, women-only nail salon at Plaza Damas"
+              loading="lazy"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', position: 'absolute', inset: 0 }}
             />
           </div>
@@ -633,6 +657,7 @@ export default function PlazaDamasPage() {
               <img
                 src={g.photo}
                 alt={`${g.label}, Dashing Diva Plaza Damas Muslimah hair salon`}
+                loading="lazy"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
               />
               <div style={{
