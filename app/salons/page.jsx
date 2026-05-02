@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Find your nearest Dashing Diva branch — Plaza Damas (Sri Hartamas, KL), Shah Alam, and Damansara. Book via Fresha or WhatsApp us directly.',
   openGraph: {
     title: 'Our Salon Locations — KL, Shah Alam & Damansara | Dashing Diva',
-    description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Open Mon–Sat.',
+    description: 'Dashing Diva has 3 Muslimah hair salon branches: Plaza Damas KL, Shah Alam, and Mutiara Damansara. Women-only, walk-ins welcome.',
     url: 'https://www.dashingdiva.my/salons',
   },
   robots: {
@@ -17,17 +17,20 @@ export const metadata = {
 const salons = [
   {
     bg: 'var(--blush)',
-    photo: '/images/salon-plazadamas-1.jpg',
+    photo: '/images/salon-plazadamas-waiting.webp',
+    photoPosition: 'center center',
     name: 'Plaza Damas',
     area: 'Sri Hartamas, KL',
-    hours: 'Mon – Sat: 10am – 7pm',
+    hours: 'Mon – Sun: 10am – 7pm',
     address: 'M-0-13, Block M, Plaza Damas, Jalan Sri Hartamas 1, Taman Sri Hartamas, 50480 Kuala Lumpur',
+    slug: '/salons/plaza-damas',
     maps: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur',
     fresha: 'https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true',
   },
   {
     bg: 'var(--pink)',
     photo: '/images/salon-shahalam-1.jpg',
+    photoPosition: 'center top',
     name: 'Shah Alam',
     area: 'Shah Alam, Selangor',
     hours: 'Mon – Sat: 10am – 7pm',
@@ -37,7 +40,8 @@ const salons = [
   },
   {
     bg: 'var(--cream-warm)',
-    photo: '/images/salon-damansara-1.jpg',
+    photo: '/images/salon-interior-1.jpg',
+    photoPosition: 'center center',
     name: 'Damansara',
     area: 'Mutiara Damansara, PJ',
     hours: 'Mon – Sat: 11am – 8pm',
@@ -71,7 +75,7 @@ export default function SalonsPage() {
               {/* Image */}
               <div style={{ height: '300px', background: s.bg, overflow: 'hidden', position: 'relative' }}>
                 {s.photo
-                  ? <img src={s.photo} alt={`Dashing Diva ${s.name}`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
+                  ? <img src={s.photo} alt={`Dashing Diva ${s.name}`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: s.photoPosition || 'center', display: 'block' }} />
                   : <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>Photo Coming Soon</span>
                     </div>
@@ -98,6 +102,11 @@ export default function SalonsPage() {
                   <a href={s.maps} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm" style={{ width: '100%', justifyContent: 'center' }}>
                     Get Directions
                   </a>
+                  {s.slug && (
+                    <Link href={s.slug} className="text-link" style={{ textAlign: 'center', fontSize: '12px', paddingTop: '4px' }}>
+                      View full branch page →
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

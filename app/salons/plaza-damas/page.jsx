@@ -543,7 +543,77 @@ export default function PlazaDamasPage() {
         </div>
       </section>
 
-      {/* ══ 5. GALLERY ══ */}
+      {/* ══ 5b. Q NAILS COLLAB ══ */}
+      <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '48px', paddingBottom: '48px' }}>
+        <div style={{
+          maxWidth: '1100px', margin: '0 auto',
+          background: 'var(--cream)', borderRadius: 'var(--r-lg)',
+          padding: 'clamp(28px, 4vw, 52px)',
+          display: 'flex', alignItems: 'center', gap: 'clamp(24px, 4vw, 56px)',
+          flexWrap: 'wrap',
+          boxShadow: 'var(--shadow-card)',
+        }}>
+          {/* Left: copy */}
+          <div style={{ flex: '1', minWidth: '240px' }}>
+            <div className="section-label" style={{ marginBottom: '12px' }}>In Collab With</div>
+            <div style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.5vw, 40px)', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, letterSpacing: '0.02em', marginBottom: '16px' }}>
+              HAIR DONE.<br />
+              <span style={{ color: 'var(--pink-deep)' }}>NAILS NEXT.</span>
+            </div>
+            <p style={{ fontSize: '13px', lineHeight: 1.8, color: 'var(--muted)', marginBottom: '18px', maxWidth: '420px' }}>
+              Q Nails is the nail salon right next door to us at Plaza Damas. Women-only space, no male staff — Muslimah-friendly mani/pedi as standard. Book your nails the same day as your hair appointment and make one trip do more.
+            </p>
+            {/* Tags */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '24px' }}>
+              {['Women Only', 'Mani & Pedi', 'Next Door'].map((tag) => (
+                <span key={tag} style={{
+                  background: 'var(--yellow-soft)', borderRadius: 'var(--r-pill)',
+                  padding: '5px 14px',
+                  fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
+                  letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--warm-dark)',
+                  border: '1px solid rgba(245,197,24,0.40)',
+                }}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+            {/* CTAs */}
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <a
+                href="https://www.fresha.com/a/q-nails-kuala-lumpur-plaza-damas-60-jalan-sri-hartamas-1-tq33svbp"
+                target="_blank" rel="noopener noreferrer"
+                className="btn btn-ghost btn-sm"
+              >
+                Book Q Nails on Fresha
+              </a>
+              <a
+                href="https://wa.me/60163808991"
+                target="_blank" rel="noopener noreferrer"
+                className="btn btn-ghost btn-sm"
+              >
+                WhatsApp Q Nails
+              </a>
+            </div>
+          </div>
+
+          {/* Right: salon photo */}
+          <div style={{
+            flex: '0 0 clamp(200px, 36%, 420px)',
+            borderRadius: 'var(--r-md)',
+            overflow: 'hidden',
+            aspectRatio: '9/6',
+            position: 'relative',
+          }}>
+            <img
+              src="/images/qnails-interior.webp"
+              alt="Q Nails interior, women-only nail salon at Plaza Damas"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', position: 'absolute', inset: 0 }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ══ 6. GALLERY ══ */}
       <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '12px' }}>
           <div>
