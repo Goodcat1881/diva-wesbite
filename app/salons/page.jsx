@@ -25,7 +25,7 @@ const salons = [
     address: 'M-0-13, Block M, Plaza Damas, Jalan Sri Hartamas 1, Taman Sri Hartamas, 50480 Kuala Lumpur',
     slug: '/salons/plaza-damas',
     maps: 'https://www.google.com/maps/search/?api=1&query=M-0-13+Block+M+Plaza+Damas+Jalan+Sri+Hartamas+1+Taman+Sri+Hartamas+50480+Kuala+Lumpur',
-    fresha: 'https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true',
+    fresha: 'https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=plaza-damas',
   },
   {
     bg: 'var(--pink)',
@@ -36,7 +36,7 @@ const salons = [
     hours: 'Mon – Sat: 10am – 7pm',
     address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',
     maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor',
-    fresha: 'https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true',
+    fresha: 'https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=shah-alam',
   },
   {
     bg: 'var(--cream-warm)',
@@ -47,7 +47,7 @@ const salons = [
     hours: 'Mon – Sat: 11am – 8pm',
     address: 'Hair Library, 21, Jalan PJU 7/7a, Mutiara Damansara, 47800 Petaling Jaya, Selangor',
     maps: 'https://www.google.com/maps/search/?api=1&query=Hair+Library+21+Jalan+PJU+7+7a+Mutiara+Damansara+47800+Petaling+Jaya+Selangor',
-    fresha: 'https://www.fresha.com/a/dashing-diva-damansara-petaling-jaya-hair-library-bangunan-sterling-group-21-jalan-pju-7-7a-o9dwyt9p/all-offer?venue=true',
+    fresha: 'https://www.fresha.com/a/dashing-diva-damansara-petaling-jaya-hair-library-bangunan-sterling-group-21-jalan-pju-7-7a-o9dwyt9p/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=damansara',
   },
 ]
 

@@ -270,7 +270,7 @@ export default function PlazaDamasPage() {
 
             </div>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-              <a href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <a href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=plaza-damas" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book Now on Fresha
               </a>
               <a href="https://wa.me/60123096125" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
@@ -353,7 +353,7 @@ export default function PlazaDamasPage() {
               {/* Primary CTA — singular and clear */}
               <div style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <a
-                  href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true"
+                  href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=plaza-damas"
                   target="_blank" rel="noopener noreferrer"
                   className="btn btn-primary btn-sm"
                   style={{ width: '100%', justifyContent: 'center' }}
@@ -603,7 +603,7 @@ export default function PlazaDamasPage() {
             {/* CTAs */}
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
               <a
-                href="https://www.fresha.com/a/q-nails-kuala-lumpur-plaza-damas-60-jalan-sri-hartamas-1-tq33svbp"
+                href="https://www.fresha.com/a/q-nails-kuala-lumpur-plaza-damas-60-jalan-sri-hartamas-1-tq33svbp?utm_source=website&utm_medium=referral&utm_campaign=qnails-collab"
                 target="_blank" rel="noopener noreferrer"
                 className="btn btn-ghost btn-sm"
               >
@@ -763,7 +763,7 @@ export default function PlazaDamasPage() {
             Women-only. Walk-ins welcome. Or book ahead via Fresha. It takes less than a minute.
           </p>
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href="https://www.fresha.com/a/dashing-diva-plaza-damas-kuala-lumpur-plaza-damas-no-60-jalan-sri-hartamas-1-hyt9ekup/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=plaza-damas" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               Book via Fresha
             </a>
             <a href="https://wa.me/60123096125" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.25)' }}>
