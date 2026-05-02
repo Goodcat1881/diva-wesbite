@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
   if (!post) return {}
   const slugPath = `/blog/${post.slug?.current}`
   return {
-    title: `${post.title} | Dashing Diva`,
+    title: post.title,
     description: post.excerpt,
     alternates: {
       canonical: slugPath,

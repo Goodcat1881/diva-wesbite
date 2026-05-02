@@ -29,8 +29,8 @@ const salons = [
   },
   {
     bg: 'var(--pink)',
-    photo: '/images/salon-shahalam-1.jpg',
-    photoPosition: 'center top',
+    photo: '/images/salon-shahalam.webp',
+    photoPosition: 'center center',
     name: 'Shah Alam',
     area: 'Shah Alam, Selangor',
     hours: 'Mon – Sat: 10am – 7pm',
@@ -114,21 +114,6 @@ export default function SalonsPage() {
         </div>
       </section>
 
-      {/* ── BOTTOM CTA ── */}
-      <section className="sp" style={{ background: 'var(--blush)', paddingTop: '64px', paddingBottom: '64px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '560px', margin: '0 auto' }}>
-          <div className="section-label" style={{ justifyContent: 'center' }}>Questions?</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 48px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '14px' }}>
-            NOT SURE WHICH<br />BRANCH TO VISIT?
-          </h2>
-          <p style={{ fontSize: '14px', lineHeight: 1.7, color: 'var(--muted)', marginBottom: '28px' }}>
-            Drop us a message and we'll help you find the right branch and stylist for what you need.
-          </p>
-          <a href="mailto:hello@dashingdiva.my" className="btn btn-primary">
-            hello@dashingdiva.my
-          </a>
-        </div>
-      </section>
 
     </main>
   )
