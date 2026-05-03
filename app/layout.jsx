@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Dashing Diva Malaysia — Muslimah Hair Salon in KL, PJ & Shah Alam',
     template: '%s | Dashing Diva Malaysia',
   },
-  description: 'A women-only Muslimah hair salon with branches in Kuala Lumpur, Petaling Jaya, and Shah Alam. Quality hair care at honest prices. Book now on Fresha.',
+  description: 'Women-only Muslimah hair salon with branches in Sri Hartamas (KL), Shah Alam & Mutiara Damansara. Quality cuts, colour & treatments.',
   alternates: {
     canonical: '/',
     languages: {
@@ -18,7 +18,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/logo.png',
+    icon: '/favicon.ico',
   },
   openGraph: {
     type: 'website',
@@ -26,7 +26,7 @@ export const metadata = {
     url: 'https://www.dashingdiva.my',
     siteName: 'Dashing Diva Malaysia',
     title: 'Dashing Diva Malaysia — Muslimah Hair Salon in KL, PJ & Shah Alam',
-    description: 'A women-only Muslimah hair salon with branches in Kuala Lumpur, Petaling Jaya, and Shah Alam. Quality hair care at honest prices.',
+    description: 'Women-only Muslimah hair salon with branches in Sri Hartamas (KL), Shah Alam & Mutiara Damansara. Quality cuts, colour & treatments.',
     images: [
       {
         url: '/images/hero-02.png',
