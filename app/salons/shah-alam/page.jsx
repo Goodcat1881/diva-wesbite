@@ -298,7 +298,7 @@ export default function ShahAlamPage() {
           <img
             src="/images/salon-shahalam-hero.webp"
             alt="Dashing Diva Shah Alam Muslimah hair salon interior at Kompleks PKNS"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 55%', display: 'block', position: 'absolute', inset: 0 }}
           />
           {/* Women-only badge */}
           <div style={{
