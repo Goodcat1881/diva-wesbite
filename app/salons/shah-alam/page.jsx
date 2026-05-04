@@ -401,10 +401,10 @@ export default function ShahAlamPage() {
           {/* Right: salon photo */}
           <div style={{ borderRadius: 'var(--r-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', background: 'var(--blush)', aspectRatio: '4/5', position: 'relative', minHeight: '360px' }}>
             <img
-              src="/images/salon-shahalam-1.jpg"
-              alt="Dashing Diva Shah Alam interior, Muslimah hair salon at Kompleks PKNS Selangor"
+              src="/images/salon-shahalam-interior.webp"
+              alt="Dashing Diva Shah Alam waiting area and product shelves, Muslimah hair salon at Kompleks PKNS Selangor"
               loading="lazy"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%', display: 'block', position: 'absolute', inset: 0 }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', position: 'absolute', inset: 0 }}
             />
             <div style={{
               position: 'absolute', top: '20px', left: '20px',
