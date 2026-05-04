@@ -3,7 +3,7 @@ import Link from 'next/link'
 /* ── SEO Metadata ── */
 export const metadata = {
   title: 'Muslimah Hair Salon in Shah Alam | Dashing Diva PKNS',
-  description: 'Dashing Diva Shah Alam at Kompleks PKNS. Women-only Muslimah hair salon serving Shah Alam, Klang & surrounding Selangor areas. Book via Fresha.',
+  description: 'Dashing Diva Shah Alam at Kompleks PKNS. Women-only Muslimah hair salon serving Seksyen 6, 7, 9, 14 and surrounding Shah Alam areas. Book via Fresha.',
   openGraph: {
     title: 'Dashing Diva Shah Alam: Muslimah Hair Salon at Kompleks PKNS',
     description: 'Women-only Muslimah hair salon at Kompleks PKNS Shah Alam. Quality cuts, colour, keratin & treatments for hijab wearers and all women in Selangor.',
@@ -102,7 +102,7 @@ const faqJsonLd = {
       name: 'Which areas near Shah Alam do you serve?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Our Shah Alam branch at Kompleks PKNS serves clients from across Shah Alam including Seksyen 14, Setia Alam, Kota Kemuning, as well as clients travelling in from Klang, Subang Jaya, and USJ. Most clients are within 15–20 minutes of the salon.',
+        text: 'We are in central Shah Alam at Kompleks PKNS, a short drive from Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14. Clients also come in from Setia Alam, Kota Kemuning, Klang, Subang Jaya, and USJ.',
       },
     },
     {
@@ -118,7 +118,7 @@ const faqJsonLd = {
       name: "What's the difference between a Muslimah salon and a regular salon?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "A Muslimah salon is women-only — no male staff, no male clients, no mixed-gender sections. For hijab wearers, that means you can remove your headscarf freely throughout your appointment. At Dashing Diva Shah Alam, the entire space operates this way, not just a private room at the back.",
+        text: "A Muslimah salon is women-only. No male staff, no male clients, no mixed-gender sections. For hijab wearers, that means you can remove your headscarf freely throughout your appointment. At Dashing Diva Shah Alam, the entire space operates this way, not just a private room at the back.",
       },
     },
     {
@@ -182,7 +182,7 @@ const stylists = [
     years: 'Senior Stylist',
     joined: 'With Dashing Diva Since Year Two',
     personality: "She knew what she wanted at 19 and hasn't stopped since. Her regulars come back partly for the hair and partly because she already knows what they want before they sit down.",
-    bio: "Yien got into hair at 19 — and went straight. She joined Dashing Diva Shah Alam in the salon's second year, early enough to have been part of what built it. Butterfly cuts and blowouts are her signature, and she knows balayage the way some people know a shortcut — without having to think about it.",
+    bio: "Yien got into hair at 19 and has not looked back. She joined Dashing Diva Shah Alam in the salon's second year, early enough to have shaped what it became. Butterfly cuts and blowouts are her signature, and she reads balayage the way some people read a map: without having to think about it.",
     specialisms: ['Butterfly Cut', 'Blowout', 'Balayage'],
     bg: 'var(--blush)',
   },
@@ -192,8 +192,8 @@ const stylists = [
     alt: 'Aisyah, hairstylist at Dashing Diva Shah Alam, blowout and styling specialist at Kompleks PKNS',
     years: '5 Years Experience',
     joined: null,
-    personality: "Detail-driven and quietly confident. Her clients leave looking like they always looked that good — she just helped.",
-    bio: "Aisyah comes to Shah Alam with five years in the industry behind her — four at Hanarich Salon and a year at Hannan Medispa, where she developed a sharp eye for styling that works day-to-day, not just on the day. Blowouts and personalised styling are her calling card: practical, polished, and built to last. She believes great hairstyling starts with listening — understanding what a client needs before picking up a comb.",
+    personality: "Detail-driven and quietly confident. Her clients leave looking like they always looked that good. She just helped them get there.",
+    bio: "Aisyah comes to Shah Alam with five years in the industry: four at Hanarich Salon and a year at Hannan Medispa, where she built a sharp eye for styling that works day-to-day, not just on the day. Blowouts and personalised styling are her calling card: practical, polished, and built to last. She believes great hairstyling starts with listening, understanding what a client needs before picking up a comb.",
     specialisms: ['Blowout', 'Styling', 'Client Consultation'],
     bg: 'var(--cream-warm)',
   },
@@ -203,8 +203,8 @@ const stylists = [
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
-    personality: "Eleven years in — she has regulars who have followed her from salon to salon. That doesn't happen by accident.",
-    bio: "Ameera started her training at GIATMARA Shah Alam before building her career across some of the area's most established names — three years at Anggerik Saloon, five at Manjasari, then three years here at Dashing Diva Shah Alam. She is fluent in cuts, treatments and colour, and her loyal clients have been following her work for years. When you've got that kind of track record, the results speak for themselves.",
+    personality: "Eleven years in. She has regulars who have followed her from salon to salon. That does not happen by accident.",
+    bio: "Ameera started her training at GIATMARA Shah Alam before building her career across some of the area's most established names: three years at Anggerik Saloon, five at Manjasari, then three years here at Dashing Diva Shah Alam. She is fluent in cuts, treatments and colour, and her loyal clients have been following her work for years. When you have that kind of track record, the results speak for themselves.",
     specialisms: ['Haircut', 'Hair Colour', 'Treatment'],
     bg: 'var(--pink-light)',
   },
@@ -212,13 +212,13 @@ const stylists = [
 
 const faqs = [
   { q: 'Is this a women-only salon?',                      a: 'Yes, entirely. Every stylist and staff member at Dashing Diva Shah Alam is a woman. No private room needed, no booking ahead to check. The whole space is women-only, all the time.' },
-  { q: 'Where exactly is Dashing Diva Shah Alam?',         a: 'We are at Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor. Kompleks PKNS is a well-known landmark in the city centre — most clients find us easily.' },
+  { q: 'Where exactly is Dashing Diva Shah Alam?',         a: 'We are at Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor. Kompleks PKNS is a well-known landmark in the city centre. Most clients find us without any trouble.' },
   { q: 'What are your opening hours?',                     a: 'Monday to Saturday, 10am to 7pm. We are closed on Sundays.' },
   { q: 'Do you accept walk-ins?',                          a: "Walk-ins are welcome. If you want to avoid waiting, book ahead via Fresha or drop us a WhatsApp before coming in." },
-  { q: 'Which areas near Shah Alam do you serve?',         a: "We serve clients across Shah Alam — Seksyen 14, Setia Alam, Kota Kemuning — as well as clients coming in from Klang, Subang Jaya, and USJ. Most are within 15–20 minutes of the salon." },
+  { q: 'Which areas near Shah Alam do you serve?',         a: "We are in central Shah Alam, so most clients come from nearby sections: Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14. Clients also travel in from Setia Alam, Kota Kemuning, Klang, Subang Jaya, and USJ. Most are within 15 to 20 minutes of the salon." },
   { q: 'What services do you offer?',                      a: 'Full range: haircuts, colouring, balayage, highlights, keratin, rebonding, scalp treatments, Olaplex, and blowouts. All done by female stylists in a fully women-only space.' },
   { q: 'Is there a satisfaction guarantee?',               a: "Yes. Not happy with the result? Let us know within 7 days and we'll fix it at no charge." },
-  { q: "What's the difference between a Muslimah salon and a regular salon?", a: "A Muslimah salon is women-only — no male staff, no male clients, no mixed-gender sections. For hijab wearers, that means you can remove your headscarf freely and be fully yourself throughout your appointment. At Dashing Diva, the entire space operates this way, not just a private room at the back." },
+  { q: "What's the difference between a Muslimah salon and a regular salon?", a: "A Muslimah salon is women-only. No male staff, no male clients, no mixed-gender sections. For hijab wearers, that means you can remove your headscarf freely and be fully yourself throughout your appointment. At Dashing Diva, the entire space operates this way, not just a private room at the back." },
   { q: 'Can non-Muslims visit Dashing Diva?',              a: "Absolutely. The salon is open to all women regardless of religion or background. The women-only policy is about privacy and comfort for everyone, not exclusivity. If you want a good salon where you won't be bothered, you're welcome here." },
 ]
 
@@ -296,7 +296,7 @@ export default function ShahAlamPage() {
         {/* Right: salon photo */}
         <div style={{ flex: '1', position: 'relative', minHeight: '460px', overflow: 'hidden' }}>
           <img
-            src="/images/salon-shahalam.webp"
+            src="/images/salon-shahalam-hero.webp"
             alt="Dashing Diva Shah Alam Muslimah hair salon interior at Kompleks PKNS"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
           />
@@ -393,7 +393,7 @@ export default function ShahAlamPage() {
                 Serving This Area
               </div>
               <p style={{ fontSize: '13px', lineHeight: 1.75, color: 'var(--warm-mid)', margin: 0 }}>
-                Our Shah Alam branch is conveniently located for clients across <strong>Shah Alam</strong>, <strong>Setia Alam</strong>, <strong>Kota Kemuning</strong>, and within easy reach from <strong>Klang</strong>, <strong>Subang Jaya</strong>, and <strong>USJ</strong>.
+                We are right in central Shah Alam. Most clients come from <strong>Seksyen 6</strong>, <strong>Seksyen 7</strong>, <strong>Seksyen 9</strong>, and <strong>Seksyen 14</strong>. Clients also make the trip from <strong>Setia Alam</strong>, <strong>Kota Kemuning</strong>, <strong>Klang</strong>, and <strong>Subang Jaya</strong>.
               </p>
             </div>
           </div>
@@ -674,7 +674,7 @@ export default function ShahAlamPage() {
           </h2>
           <p style={{ fontSize: '13px', color: 'var(--muted)', lineHeight: 1.7, marginTop: '12px', marginBottom: '20px', maxWidth: '480px' }}>
             Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor.
-            Accessible from Shah Alam, Klang, Subang Jaya, and surrounding Selangor areas.
+            Close to Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14.
           </p>
         </div>
         <iframe
