@@ -37,6 +37,7 @@ const salons = [
     address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',
     maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor',
     fresha: 'https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=shah-alam',
+    slug: '/salons/shah-alam',
   },
   {
     bg: 'var(--cream-warm)',
