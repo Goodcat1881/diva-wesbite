@@ -200,6 +200,7 @@ const stylists = [
   {
     name: 'Ameera',
     photo: '/images/ameera-sa-final.webp',
+    photoPos: 'center 35%',
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
@@ -237,7 +238,7 @@ export default function ShahAlamPage() {
       <section className="hero-split" style={{ background: 'var(--cream)', minHeight: '520px', display: 'flex', alignItems: 'stretch', overflow: 'hidden' }}>
 
         {/* Left: copy */}
-        <div style={{ flex: '0 0 55%', display: 'flex', alignItems: 'center', padding: 'clamp(48px, 7vw, 96px) clamp(24px, 5vw, 80px)' }}>
+        <div style={{ flex: '0 0 55%', display: 'flex', alignItems: 'center', paddingTop: 'clamp(48px, 7vw, 96px)', paddingBottom: 'clamp(48px, 7vw, 96px)', paddingLeft: 'max(48px, calc((100vw - 1100px) / 2))', paddingRight: 'clamp(24px, 3vw, 48px)' }}>
           <div style={{ maxWidth: '560px' }}>
             <div className="section-label" style={{ marginBottom: '16px' }}>Shah Alam · Kompleks PKNS, Selangor</div>
             <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 6vw, 80px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '24px' }}>
@@ -455,7 +456,7 @@ export default function ShahAlamPage() {
                       src={s.photo}
                       alt={s.alt || `${s.name}, stylist at Dashing Diva Shah Alam`}
                       loading="lazy"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: s.photoPos || 'center top', display: 'block', position: 'absolute', inset: 0 }}
                     />
                   ) : (
                     <div style={{ height: '100%', minHeight: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
