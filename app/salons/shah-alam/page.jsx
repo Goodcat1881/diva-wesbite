@@ -200,7 +200,7 @@ const stylists = [
   {
     name: 'Ameera',
     photo: '/images/ameera-sa-final.webp',
-    photoPos: 'center 35%',
+    photoPos: 'center 40%',
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
@@ -234,93 +234,50 @@ export default function ShahAlamPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      {/* ══ 1. HERO — split layout ══ */}
-      <section className="hero-split" style={{ background: 'var(--cream)', minHeight: '520px', display: 'flex', alignItems: 'stretch', overflow: 'hidden' }}>
-
-        {/* Left: copy */}
-        <div style={{ flex: '0 0 55%', display: 'flex', alignItems: 'center', paddingTop: 'clamp(48px, 7vw, 96px)', paddingBottom: 'clamp(48px, 7vw, 96px)', paddingLeft: 'max(48px, calc((100vw - 1100px) / 2))', paddingRight: 'clamp(24px, 3vw, 48px)' }}>
-          <div style={{ maxWidth: '560px' }}>
-            <div className="section-label" style={{ marginBottom: '16px' }}>Shah Alam · Kompleks PKNS, Selangor</div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(44px, 6vw, 80px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '24px' }}>
-              MUSLIMAH HAIR<br />
-              <span style={{ color: 'var(--pink-deep)' }}>SALON SHAH ALAM</span>
-            </h1>
-            <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)', marginBottom: '32px' }}>
-              Dashing Diva Shah Alam is a fully women-only Muslimah hair salon at Kompleks PKNS. No private rooms, no booking ahead to check, no compromises. Every stylist is a woman. The whole space is yours.
-            </p>
-            {/* Trust strip — multi-platform ratings */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '28px' }}>
-
-              {/* Google */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-                <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.9</span>
-                <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
-                <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', color: 'var(--muted)' }}>(263)</span>
-              </div>
-
-              <span style={{ color: 'var(--border)', fontSize: '12px' }}>·</span>
-
-              {/* Fresha */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <img src="/images/logo-fresha.png" alt="Fresha" style={{ height: '16px', width: 'auto', display: 'block' }} />
-                <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.9</span>
-                <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
-              </div>
-
-              <span style={{ color: 'var(--border)', fontSize: '12px' }}>·</span>
-
-              {/* ClassPass */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <img src="/images/logo-classpass.png" alt="ClassPass" style={{ height: '16px', width: 'auto', display: 'block' }} />
-                <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.8</span>
-                <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
-              </div>
-
-            </div>
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-              <a href="https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=shah-alam" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Book Now on Fresha
-              </a>
-              <a href="https://wa.me/60125889073" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-                WhatsApp Us
-              </a>
-            </div>
+      {/* ══ 1. HERO ══ */}
+      <section className="page-hero">
+        <div className="section-label" style={{ marginBottom: '16px' }}>Shah Alam · Kompleks PKNS, Selangor</div>
+        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(52px, 8vw, 88px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginBottom: '24px' }}>
+          MUSLIMAH HAIR<br />
+          <span style={{ color: 'var(--pink-deep)' }}>SALON SHAH ALAM</span>
+        </h1>
+        <p style={{ fontSize: '15px', lineHeight: 1.8, color: 'var(--muted)', maxWidth: '520px', marginBottom: '32px' }}>
+          Dashing Diva Shah Alam is a fully women-only Muslimah hair salon at Kompleks PKNS. No private rooms, no booking ahead to check, no compromises. Every stylist is a woman. The whole space is yours.
+        </p>
+        {/* Trust strip */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '28px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.9</span>
+            <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
+            <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', color: 'var(--muted)' }}>(263)</span>
+          </div>
+          <span style={{ color: 'var(--border)', fontSize: '12px' }}>·</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <img src="/images/logo-fresha.png" alt="Fresha" style={{ height: '16px', width: 'auto', display: 'block' }} />
+            <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.9</span>
+            <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
+          </div>
+          <span style={{ color: 'var(--border)', fontSize: '12px' }}>·</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <img src="/images/logo-classpass.png" alt="ClassPass" style={{ height: '16px', width: 'auto', display: 'block' }} />
+            <span style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, color: 'var(--warm-dark)' }}>4.8</span>
+            <span style={{ color: 'var(--yellow)', fontSize: '11px', letterSpacing: '1px' }}>★★★★★</span>
           </div>
         </div>
-
-        {/* Right: salon photo */}
-        <div style={{ flex: '1', position: 'relative', minHeight: '460px', overflow: 'hidden' }}>
-          <img
-            src="/images/salon-shahalam-hero.webp"
-            alt="Dashing Diva Shah Alam Muslimah hair salon interior at Kompleks PKNS"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center', display: 'block', position: 'absolute', inset: 0 }}
-          />
-          {/* Women-only badge */}
-          <div style={{
-            position: 'absolute', bottom: '28px', left: '28px',
-            background: 'rgba(255,255,255,0.92)', borderRadius: 'var(--r-pill)',
-            padding: '8px 20px',
-            fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
-            letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--warm-dark)',
-            boxShadow: '0 2px 16px rgba(42,21,32,0.12)',
-          }}>
-            ✦ Ladies Only · Mon – Sun
-          </div>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <a href="https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=shah-alam" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Book Now on Fresha
+          </a>
+          <a href="https://wa.me/60125889073" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+            WhatsApp Us
+          </a>
         </div>
-
-        {/* Mobile responsive */}
-        <style>{`
-          @media (max-width: 768px) {
-            .hero-split { flex-direction: column !important; }
-            .hero-split > div:last-child { min-height: 280px !important; flex: 0 0 280px !important; }
-          }
-        `}</style>
       </section>
 
       {/* ══ 2. PILLARS — trust layer ══ */}
@@ -450,7 +407,7 @@ export default function ShahAlamPage() {
               className="stylist-row"
               >
                 {/* Photo col */}
-                <div style={{ flex: '0 0 42%', position: 'relative', overflow: 'hidden', minHeight: '380px' }}>
+                <div style={{ flex: '0 0 42%', position: 'relative', overflow: 'hidden', minHeight: '480px' }}>
                   {s.photo ? (
                     <img
                       src={s.photo}
@@ -537,8 +494,8 @@ export default function ShahAlamPage() {
               flex-direction: column !important;
             }
             .stylist-row > div:first-child {
-              min-height: 300px !important;
-              flex: 0 0 300px !important;
+              min-height: 360px !important;
+              flex: 0 0 360px !important;
             }
           }
         `}</style>
