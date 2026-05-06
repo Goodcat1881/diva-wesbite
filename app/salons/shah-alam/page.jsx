@@ -199,8 +199,7 @@ const stylists = [
   },
   {
     name: 'Ameera',
-    photo: '/images/ameera-sa-final.webp',
-    photoPos: 'center 40%',
+    photo: '/images/ameera-sa-v2.webp',
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
