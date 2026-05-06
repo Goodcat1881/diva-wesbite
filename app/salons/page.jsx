@@ -29,11 +29,11 @@ const salons = [
   },
   {
     bg: 'var(--pink)',
-    photo: '/images/salon-shahalam.webp',
-    photoPosition: 'center center',
+    photo: '/images/salon-shahalam-interior.webp',
+    photoPosition: 'center 30%',
     name: 'Shah Alam',
     area: 'Shah Alam, Selangor',
-    hours: 'Mon – Sat: 10am – 7pm',
+    hours: 'Mon – Sun: 10am – 7pm',
     address: 'Kompleks PKNS Shah Alam, Lot G-13A Mezzanine Floor, 40000 Shah Alam, Selangor',
     maps: 'https://www.google.com/maps/search/?api=1&query=Kompleks+PKNS+Shah+Alam+Lot+G-13A+Mezzanine+Floor+40000+Shah+Alam+Selangor',
     fresha: 'https://www.fresha.com/ms/a/dashing-diva-shah-alam-shah-alam-kompleks-pkns-kqb0kre7/all-offer?venue=true&utm_source=website&utm_medium=referral&utm_campaign=shah-alam',
@@ -58,14 +58,16 @@ export default function SalonsPage() {
 
       {/* ── PAGE HEADER ── */}
       <section className="page-hero">
-        <div className="section-label">Locations</div>
-        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(52px, 8vw, 88px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginTop: '8px', marginBottom: '16px' }}>
-          FIND YOUR<br />
-          <span style={{ color: 'var(--pink-deep)' }}>NEAREST SALON</span>
-        </h1>
-        <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--muted)', maxWidth: '460px' }}>
-          Three branches across Kuala Lumpur and Selangor. Women-only. Walk-ins welcome.
-        </p>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', width: '100%' }}>
+          <div className="section-label">Locations</div>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(52px, 8vw, 88px)', letterSpacing: '0.02em', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 0.93, marginTop: '8px', marginBottom: '16px' }}>
+            FIND YOUR<br />
+            <span style={{ color: 'var(--pink-deep)' }}>NEAREST SALON</span>
+          </h1>
+          <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--muted)', maxWidth: '460px' }}>
+            Three branches across Kuala Lumpur and Selangor. Women-only. Walk-ins welcome.
+          </p>
+        </div>
       </section>
 
       {/* ── SALON CARDS ── */}

@@ -26,7 +26,7 @@ const jsonLd = {
   priceRange: 'RM 15 – RM 700+',
   currenciesAccepted: 'MYR',
   paymentAccepted: 'Cash, Credit Card',
-  openingHours: 'Mo-Sa 10:00-19:00',
+  openingHours: 'Mo-Su 10:00-19:00',
   telephone: '+60125889073',
   address: {
     '@type': 'PostalAddress',
@@ -86,7 +86,7 @@ const faqJsonLd = {
       name: 'What are the opening hours at Shah Alam?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Shah Alam branch is open Monday to Saturday, 10am to 7pm. We are closed on Sundays.',
+        text: 'The Shah Alam branch is open Monday to Sunday, 10am to 7pm. We are open every day.',
       },
     },
     {
@@ -199,7 +199,7 @@ const stylists = [
   },
   {
     name: 'Ameera',
-    photo: '/images/ameera-profile-pic.webp',
+    photo: '/images/ameera-sa-final.webp',
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
@@ -213,7 +213,7 @@ const stylists = [
 const faqs = [
   { q: 'Is this a women-only salon?',                      a: 'Yes, entirely. Every stylist and staff member at Dashing Diva Shah Alam is a woman. No private room needed, no booking ahead to check. The whole space is women-only, all the time.' },
   { q: 'Where exactly is Dashing Diva Shah Alam?',         a: 'We are at Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor. Kompleks PKNS is a well-known landmark in the city centre. Most clients find us without any trouble.' },
-  { q: 'What are your opening hours?',                     a: 'Monday to Saturday, 10am to 7pm. We are closed on Sundays.' },
+  { q: 'What are your opening hours?',                     a: 'Monday to Sunday, 10am to 7pm. We are open every day.' },
   { q: 'Do you accept walk-ins?',                          a: "Walk-ins are welcome. If you want to avoid waiting, book ahead via Fresha or drop us a WhatsApp before coming in." },
   { q: 'Which areas near Shah Alam do you serve?',         a: "We are in central Shah Alam, so most clients come from nearby sections: Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14. Clients also travel in from Setia Alam, Kota Kemuning, Klang, Subang Jaya, and USJ. Most are within 15 to 20 minutes of the salon." },
   { q: 'What services do you offer?',                      a: 'Full range: haircuts, colouring, balayage, highlights, keratin, rebonding, scalp treatments, Olaplex, and blowouts. All done by female stylists in a fully women-only space.' },
@@ -298,7 +298,7 @@ export default function ShahAlamPage() {
           <img
             src="/images/salon-shahalam-hero.webp"
             alt="Dashing Diva Shah Alam Muslimah hair salon interior at Kompleks PKNS"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 55%', display: 'block', position: 'absolute', inset: 0 }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center', display: 'block', position: 'absolute', inset: 0 }}
           />
           {/* Women-only badge */}
           <div style={{
@@ -309,7 +309,7 @@ export default function ShahAlamPage() {
             letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--warm-dark)',
             boxShadow: '0 2px 16px rgba(42,21,32,0.12)',
           }}>
-            ✦ Ladies Only · Mon – Sat
+            ✦ Ladies Only · Mon – Sun
           </div>
         </div>
 
@@ -351,8 +351,8 @@ export default function ShahAlamPage() {
               </InfoRow>
 
               <InfoRow icon="🕐" label="Hours">
-                Monday – Saturday: 10am – 7pm<br />
-                <span style={{ color: 'var(--muted)', fontSize: '12px' }}>Closed on Sundays</span>
+                Monday – Sunday: 10am – 7pm<br />
+                <span style={{ color: 'var(--muted)', fontSize: '12px' }}>Open every day</span>
               </InfoRow>
 
               <InfoRow icon="📞" label="Phone">
@@ -679,7 +679,7 @@ export default function ShahAlamPage() {
         </div>
         <iframe
           title="Dashing Diva Shah Alam Map"
-          src="https://maps.google.com/maps?q=Kompleks+PKNS+Shah+Alam+40000+Shah+Alam+Selangor&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Dashing+Diva+Shah+Alam+Kompleks+PKNS&t=&z=17&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="320"
           style={{ border: 0, display: 'block' }}
