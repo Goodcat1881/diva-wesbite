@@ -72,7 +72,7 @@ export default function SalonsPage() {
       <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
         <div className="rg-3" style={{ maxWidth: '1100px', margin: '0 auto', gap: '20px' }}>
           {salons.map((s, i) => (
-            <div key={i} className="card" style={{ overflow: 'hidden', padding: 0 }}>
+            <div key={i} className="card" style={{ overflow: 'hidden', padding: 0, display: 'flex', flexDirection: 'column' }}>
               {/* Image */}
               <div style={{ height: '300px', background: s.bg, overflow: 'hidden', position: 'relative' }}>
                 {s.photo
@@ -83,7 +83,7 @@ export default function SalonsPage() {
                 }
               </div>
               {/* Info */}
-              <div style={{ padding: '22px 22px 26px' }}>
+              <div style={{ padding: '22px 22px 26px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 1.05, marginBottom: '4px' }}>
                   DASHING DIVA<br />{s.name}
                 </div>
@@ -96,7 +96,7 @@ export default function SalonsPage() {
                 <div style={{ fontSize: '13px', color: 'var(--muted)', lineHeight: 1.65, marginBottom: '18px' }}>
                   {s.address}
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: 'auto' }}>
                   <a href={s.fresha} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm" style={{ width: '100%', justifyContent: 'center' }}>
                     Book at This Salon
                   </a>
