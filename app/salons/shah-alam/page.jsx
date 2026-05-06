@@ -188,7 +188,7 @@ const stylists = [
   },
   {
     name: 'Aisyah',
-    photo: '/images/aisyah-profile-pic.webp',
+    photo: '/images/aisyah-sa-final.webp',
     alt: 'Aisyah, hairstylist at Dashing Diva Shah Alam, blowout and styling specialist at Kompleks PKNS',
     years: '5 Years Experience',
     joined: null,
