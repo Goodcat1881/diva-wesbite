@@ -203,6 +203,7 @@ const stylists = [
     alt: 'Ameera, senior hairstylist at Dashing Diva Shah Alam, hair colour and treatment specialist at Kompleks PKNS',
     years: '11 Years Experience',
     joined: null,
+    photoPos: 'center center',
     personality: "Eleven years in. She has regulars who have followed her from salon to salon. That does not happen by accident.",
     bio: "Ameera started her training at GIATMARA Shah Alam before building her career across some of the area's most established names: three years at Anggerik Saloon, five at Manjasari, then three years here at Dashing Diva Shah Alam. She is fluent in cuts, treatments and colour, and her loyal clients have been following her work for years. When you have that kind of track record, the results speak for themselves.",
     specialisms: ['Haircut', 'Hair Colour', 'Treatment'],
@@ -609,7 +610,8 @@ export default function ShahAlamPage() {
 
       {/* ══ 8. FAQ ══ */}
       <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
-        <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '720px' }}>
           <div className="section-label" style={{ marginBottom: '8px' }}>FAQ</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 44px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', marginBottom: '36px' }}>
             COMMON<br />QUESTIONS
@@ -629,6 +631,7 @@ export default function ShahAlamPage() {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </section>
 

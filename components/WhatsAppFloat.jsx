@@ -1,11 +1,18 @@
 'use client'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
-const salons = [
+const allSalons = [
   { name: 'Plaza Damas',  number: '60123096125', dot: 'var(--blush)' },
   { name: 'Shah Alam',    number: '60125889073', dot: 'var(--pink)' },
   { name: 'Damansara',    number: '60163541201', dot: 'var(--cream-warm)' },
 ]
+
+/* Per-page salon overrides — key is a pathname substring */
+const salonsByPage = {
+  '/salons/shah-alam':   [{ name: 'Shah Alam', number: '60125889073', dot: 'var(--pink)' }],
+  '/salons/plaza-damas': [{ name: 'Plaza Damas', number: '60123096125', dot: 'var(--blush)' }],
+}
 
 const socialButtons = [
   {
@@ -32,6 +39,11 @@ const socialButtons = [
 
 export default function WhatsAppFloat() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  /* Use page-specific salon list if defined, otherwise show all */
+  const matchedKey = Object.keys(salonsByPage).find(k => pathname.includes(k))
+  const salons = matchedKey ? salonsByPage[matchedKey] : allSalons
 
   return (
     <div style={{
