@@ -146,7 +146,7 @@ const breadcrumbJsonLd = {
 /* ── Data ── */
 const pillars = [
   { icon: '🔒', title: 'Fully Women Only',             body: "Every stylist and every staff member here is a woman. You don't need to call ahead and ask. It's the whole point." },
-  { icon: '✂️', title: 'Craft You Can See',            body: "Ameera has been doing this for eleven years. Every service at Shah Alam follows the same standard. No rushing, no shortcuts." },
+  { icon: '✂️', title: 'Craft You Can See',            body: "Bambang Soteto built his name doing the work properly. Every service follows the same standard. No rushing, no shortcuts." },
   { icon: '💛', title: 'Honest Prices, Shown Upfront', body: 'Before you sit down, you know what it costs. No private room fee on top. No surprise at checkout.' },
   { icon: '🛡️', title: 'Fixed Within 7 Days',         body: "Not happy with the result? Tell us within 7 days and we'll sort it. No awkward conversation required." },
 ]
