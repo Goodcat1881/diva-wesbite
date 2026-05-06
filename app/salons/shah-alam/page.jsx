@@ -323,16 +323,18 @@ export default function ShahAlamPage() {
       </section>
 
       {/* ══ 2. PILLARS — trust layer ══ */}
-      <section className="rg-4 sp" style={{ gap: '16px', background: 'var(--cream)', paddingTop: '40px', paddingBottom: '40px' }}>
-        {pillars.map((p, i) => (
-          <div key={i} className="card" style={{ padding: '28px 24px' }}>
-            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: 'var(--blush)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px', marginBottom: '16px' }}>
-              {p.icon}
+      <section className="sp" style={{ background: 'var(--cream)', paddingTop: '40px', paddingBottom: '40px' }}>
+        <div className="rg-4" style={{ maxWidth: '1100px', margin: '0 auto', gap: '16px' }}>
+          {pillars.map((p, i) => (
+            <div key={i} className="card" style={{ padding: '28px 24px' }}>
+              <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: 'var(--blush)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px', marginBottom: '16px' }}>
+                {p.icon}
+              </div>
+              <h3 style={{ fontSize: '14px', fontWeight: 700, color: 'var(--warm-dark)', marginBottom: '8px', lineHeight: 1.4 }}>{p.title}</h3>
+              <p style={{ fontSize: '12px', lineHeight: 1.75, color: 'var(--muted)', margin: 0 }}>{p.body}</p>
             </div>
-            <h3 style={{ fontSize: '14px', fontWeight: 700, color: 'var(--warm-dark)', marginBottom: '8px', lineHeight: 1.4 }}>{p.title}</h3>
-            <p style={{ fontSize: '12px', lineHeight: 1.75, color: 'var(--muted)', margin: 0 }}>{p.body}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
 
       {/* ══ 3. BRANCH ESSENTIALS ══ */}
@@ -424,11 +426,13 @@ export default function ShahAlamPage() {
       <section style={{ background: 'var(--cream)' }}>
         {/* Section header */}
         <div className="sp" style={{ paddingTop: '64px', paddingBottom: '36px' }}>
-          <div className="section-label">Meet the Team</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
-            YOUR STYLISTS AT<br />
-            <span style={{ color: 'var(--pink-deep)' }}>SHAH ALAM</span>
-          </h2>
+          <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+            <div className="section-label">Meet the Team</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
+              YOUR STYLISTS AT<br />
+              <span style={{ color: 'var(--pink-deep)' }}>SHAH ALAM</span>
+            </h2>
+          </div>
         </div>
 
         {/* Stylist cards — full width, alternating bg */}
@@ -541,102 +545,108 @@ export default function ShahAlamPage() {
 
       {/* ══ 5. SERVICES ══ */}
       <section className="sp" style={{ background: 'var(--cream)', paddingTop: '64px', paddingBottom: '64px' }}>
-        <div style={{ marginBottom: '32px' }}>
-          <div className="section-label">What we offer</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
-            MUSLIMAH HAIR<br />
-            <span style={{ color: 'var(--pink-deep)' }}>SERVICES AT SHAH ALAM</span>
-          </h2>
-        </div>
-        <div className="rg-4" style={{ gap: '16px', marginBottom: '24px' }}>
-          {services.map((s, i) => (
-            <div key={i} style={{
-              background: s.bg, borderRadius: 'var(--r-md)', padding: '28px 24px',
-              boxShadow: 'var(--shadow-card)', display: 'flex', flexDirection: 'column', gap: '12px',
-            }}>
-              <div style={{ fontSize: '28px' }}>{s.icon}</div>
-              <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 1.05 }}>
-                {s.name}
-              </div>
-              <div style={{
-                alignSelf: 'flex-start', background: 'var(--yellow-soft)', borderRadius: 'var(--r-pill)',
-                padding: '4px 14px', fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
-                letterSpacing: '0.06em', color: 'var(--warm-dark)', border: '1px solid rgba(245,197,24,0.40)',
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ marginBottom: '32px' }}>
+            <div className="section-label">What we offer</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
+              MUSLIMAH HAIR<br />
+              <span style={{ color: 'var(--pink-deep)' }}>SERVICES AT SHAH ALAM</span>
+            </h2>
+          </div>
+          <div className="rg-4" style={{ gap: '16px', marginBottom: '24px' }}>
+            {services.map((s, i) => (
+              <div key={i} style={{
+                background: s.bg, borderRadius: 'var(--r-md)', padding: '28px 24px',
+                boxShadow: 'var(--shadow-card)', display: 'flex', flexDirection: 'column', gap: '12px',
               }}>
-                {s.price}
+                <div style={{ fontSize: '28px' }}>{s.icon}</div>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', textTransform: 'uppercase', color: 'var(--warm-dark)', lineHeight: 1.05 }}>
+                  {s.name}
+                </div>
+                <div style={{
+                  alignSelf: 'flex-start', background: 'var(--yellow-soft)', borderRadius: 'var(--r-pill)',
+                  padding: '4px 14px', fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
+                  letterSpacing: '0.06em', color: 'var(--warm-dark)', border: '1px solid rgba(245,197,24,0.40)',
+                }}>
+                  {s.price}
+                </div>
+                <p style={{ fontSize: '13px', lineHeight: 1.65, color: 'var(--muted)', margin: 0 }}>{s.desc}</p>
               </div>
-              <p style={{ fontSize: '13px', lineHeight: 1.65, color: 'var(--muted)', margin: 0 }}>{s.desc}</p>
-            </div>
-          ))}
-        </div>
-        <div style={{ textAlign: 'center' }}>
-          <Link href="/services" className="text-link">See full services &amp; pricing →</Link>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Link href="/services" className="text-link">See full services &amp; pricing →</Link>
+          </div>
         </div>
       </section>
 
       {/* ══ 6. GALLERY ══ */}
       <section className="sp" style={{ background: 'var(--cream-warm)', paddingTop: '64px', paddingBottom: '64px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '12px' }}>
-          <div>
-            <div className="section-label">The Work</div>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
-              RESULTS FROM<br />OUR STYLISTS
-            </h2>
-          </div>
-          <Link href="/gallery" className="text-link">See full gallery →</Link>
-        </div>
-        <div className="rg-3" style={{ gap: '16px' }}>
-          {galleryItems.map((g, i) => (
-            <div key={i} style={{
-              aspectRatio: '3/4', background: g.bg, borderRadius: 'var(--r-md)',
-              position: 'relative', overflow: 'hidden', boxShadow: 'var(--shadow-card)',
-            }}>
-              <img
-                src={g.photo}
-                alt={`${g.label}, Dashing Diva Shah Alam Muslimah hair salon`}
-                loading="lazy"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
-              />
-              <div style={{
-                position: 'absolute', bottom: 0, left: 0, right: 0,
-                background: 'linear-gradient(to top, rgba(42,21,32,0.70) 0%, transparent 60%)',
-                padding: '40px 18px 16px',
-                fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
-                letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FFFFFF',
-              }}>
-                {g.label}
-              </div>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '12px' }}>
+            <div>
+              <div className="section-label">The Work</div>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
+                RESULTS FROM<br />OUR STYLISTS
+              </h2>
             </div>
-          ))}
+            <Link href="/gallery" className="text-link">See full gallery →</Link>
+          </div>
+          <div className="rg-3" style={{ gap: '16px' }}>
+            {galleryItems.map((g, i) => (
+              <div key={i} style={{
+                aspectRatio: '3/4', background: g.bg, borderRadius: 'var(--r-md)',
+                position: 'relative', overflow: 'hidden', boxShadow: 'var(--shadow-card)',
+              }}>
+                <img
+                  src={g.photo}
+                  alt={`${g.label}, Dashing Diva Shah Alam Muslimah hair salon`}
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', position: 'absolute', inset: 0 }}
+                />
+                <div style={{
+                  position: 'absolute', bottom: 0, left: 0, right: 0,
+                  background: 'linear-gradient(to top, rgba(42,21,32,0.70) 0%, transparent 60%)',
+                  padding: '40px 18px 16px',
+                  fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700,
+                  letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FFFFFF',
+                }}>
+                  {g.label}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ══ 7. REVIEWS ══ */}
       <section className="sp" style={{ background: 'var(--blush)', paddingTop: '64px', paddingBottom: '64px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '32px', flexWrap: 'wrap', gap: '12px' }}>
-          <div>
-            <div className="section-label">Client Reviews</div>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
-              WHAT OUR<br />CLIENTS SAY
-            </h2>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ color: 'var(--yellow)', fontSize: '18px', letterSpacing: '3px' }}>★★★★★</span>
-            <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted)' }}>4.9 on Google · 263 reviews</span>
-          </div>
-        </div>
-        <div className="rg-2" style={{ gap: '16px' }}>
-          {reviews.map((r, i) => (
-            <div key={i} className="card" style={{ padding: '24px 22px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ color: 'var(--yellow)', fontSize: '12px', letterSpacing: '2px' }}>★★★★★</div>
-              <p style={{ fontSize: '13px', lineHeight: 1.75, color: 'var(--warm-mid)', fontStyle: 'italic', flexGrow: 1, margin: 0 }}>
-                "{r.quote}"
-              </p>
-              <div style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--warm-dark)' }}>
-                {r.author}
-              </div>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '32px', flexWrap: 'wrap', gap: '12px' }}>
+            <div>
+              <div className="section-label">Client Reviews</div>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 5vw, 48px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', margin: 0 }}>
+                WHAT OUR<br />CLIENTS SAY
+              </h2>
             </div>
-          ))}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ color: 'var(--yellow)', fontSize: '18px', letterSpacing: '3px' }}>★★★★★</span>
+              <span style={{ fontFamily: 'var(--font-label)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted)' }}>4.9 on Google · 263 reviews</span>
+            </div>
+          </div>
+          <div className="rg-2" style={{ gap: '16px' }}>
+            {reviews.map((r, i) => (
+              <div key={i} className="card" style={{ padding: '24px 22px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ color: 'var(--yellow)', fontSize: '12px', letterSpacing: '2px' }}>★★★★★</div>
+                <p style={{ fontSize: '13px', lineHeight: 1.75, color: 'var(--warm-mid)', fontStyle: 'italic', flexGrow: 1, margin: 0 }}>
+                  "{r.quote}"
+                </p>
+                <div style={{ fontFamily: 'var(--font-label)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--warm-dark)' }}>
+                  {r.author}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -668,14 +678,16 @@ export default function ShahAlamPage() {
       {/* ══ 9. MAP — after all persuasion ══ */}
       <section style={{ background: 'var(--cream-warm)', padding: 0 }}>
         <div className="sp" style={{ paddingTop: '48px', paddingBottom: '24px' }}>
-          <div className="section-label" style={{ marginBottom: '8px' }}>Getting Here</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', marginBottom: '4px' }}>
-            FIND US AT<br />KOMPLEKS PKNS
-          </h2>
-          <p style={{ fontSize: '13px', color: 'var(--muted)', lineHeight: 1.7, marginTop: '12px', marginBottom: '20px', maxWidth: '480px' }}>
-            Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor.
-            Close to Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14.
-          </p>
+          <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+            <div className="section-label" style={{ marginBottom: '8px' }}>Getting Here</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 40px)', lineHeight: 0.93, textTransform: 'uppercase', color: 'var(--warm-dark)', letterSpacing: '0.02em', marginBottom: '4px' }}>
+              FIND US AT<br />KOMPLEKS PKNS
+            </h2>
+            <p style={{ fontSize: '13px', color: 'var(--muted)', lineHeight: 1.7, marginTop: '12px', marginBottom: '20px', maxWidth: '480px' }}>
+              Lot G-13A, Mezzanine Floor, Kompleks PKNS Shah Alam, 40000 Shah Alam, Selangor.
+              Close to Seksyen 6, Seksyen 7, Seksyen 9, and Seksyen 14.
+            </p>
+          </div>
         </div>
         <iframe
           title="Dashing Diva Shah Alam Map"
