@@ -23,7 +23,7 @@ export default function Nav() {
       borderBottom: '1px solid var(--border)',
     }}>
       {/* ── Main bar ── */}
-      <div className="sp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 0, paddingBottom: 0, height: '64px' }}>
+      <div className="sp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 0, paddingBottom: 0, height: '64px', maxWidth: '1196px', marginLeft: 'auto', marginRight: 'auto' }}>
 
         {/* Logo */}
         <Link href="/" style={{

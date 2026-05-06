@@ -190,7 +190,7 @@ img { display: block; max-width: 100%; }
   /* Page hero header — light cream, blush bottom accent */
   .page-hero {
     background: var(--cream);
-    padding: 72px 48px 56px;
+    padding: 72px max(48px, calc((100% - 1100px) / 2)) 56px;
     border-bottom: 1px solid var(--border);
   }
 
