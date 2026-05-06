@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Dashing Diva Plaza Damas. Women-only Muslimah hair salon in Sri Hartamas, KL. Serving Mont Kiara, Taman Sri Hartamas & Desa Sri Hartamas. Book via Fresha.',
   openGraph: {
     title: 'Dashing Diva Plaza Damas: Muslimah Hair Salon in Sri Hartamas, KL',
-    description: 'Women-only Muslimah hair salon at Plaza Damas, Sri Hartamas. Quality cuts, colour, keratin & treatments. Serving Mont Kiara and surrounding areas.',
+    description: 'Women-only Muslimah hair salon at Plaza Damas, Sri Hartamas. Quality cuts, colour, keratin & treatments. Serving Mont Kiara, Solaris, Publika and surrounding areas.',
     url: 'https://www.dashingdiva.my/salons/plaza-damas',
     images: [{ url: '/images/salon-plazadamas-hero.webp', width: 1400, height: 972, alt: 'Dashing Diva Plaza Damas Muslimah Hair Salon Interior, Sri Hartamas KL' }],
   },
